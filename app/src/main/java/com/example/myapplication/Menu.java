@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,5 +39,21 @@ public class Menu extends AppCompatActivity {
        text.setText("people :"+number);
 
 
+<<<<<<< Updated upstream
+=======
+        Button Button2 = (Button) findViewById(R.id.button);
+        Button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //finish();
+                Intent i =new Intent(Menu.this,MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
+>>>>>>> Stashed changes
     }
 }
