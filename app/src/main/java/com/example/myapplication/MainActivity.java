@@ -13,16 +13,34 @@ public class   MainActivity extends AppCompatActivity {
 
     int number = 0;
 
+    public void popup(){
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("")
+                .setMessage("คุณมา"+number+"คน?")
+                .setPositiveButton("ใช่",null)
+                .setNegativeButton("ไม่ใช่",null)
+                .show();
+
+        Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+        positiveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(MainActivity.this,"Not closing",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, Menu.class);
+                intent.putExtra("MyX", number);
+                //startActivity(new Intent(MainActivity.this, Menu.class));
+                startActivity(intent);
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AlertDialog dialog = new AlertDialog.Builder(this)
-                .setTitle("fuck")
-                .setMessage("Message")
-                .setPositiveButton("ok",null)
-                .setNegativeButton("cancel",null)
-                .show();
+
+
 
 
 
@@ -33,20 +51,8 @@ public class   MainActivity extends AppCompatActivity {
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
-                positiveButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Toast.makeText(MainActivity.this,"Not closing",Toast.LENGTH_SHORT).show();
-
-                    }
-                });
-                startActivity(new Intent(MainActivity.this, Menu.class));
                 number = 1;
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                startActivity(intent);
+                popup();
 
             }
         });
@@ -55,11 +61,8 @@ public class   MainActivity extends AppCompatActivity {
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Menu.class));
                 number = 2;
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                startActivity(intent);
+                popup();
             }
         });
 
@@ -67,11 +70,8 @@ public class   MainActivity extends AppCompatActivity {
         Button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Menu.class));
                 number = 3;
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                startActivity(intent);
+                popup();
             }
         });
 
@@ -79,11 +79,8 @@ public class   MainActivity extends AppCompatActivity {
         Button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Menu.class));
                 number = 4;
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                startActivity(intent);
+                popup();
             }
         });
     }
