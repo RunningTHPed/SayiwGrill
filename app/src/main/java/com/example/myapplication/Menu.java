@@ -3,6 +3,8 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +40,17 @@ public class Menu extends AppCompatActivity {
 
        TextView text = (TextView)findViewById(R.id.textView3);
        text.setText("people :"+number);
+
+
+        Button Button2 = (Button) findViewById(R.id.button);
+        Button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+
 
 
     }
