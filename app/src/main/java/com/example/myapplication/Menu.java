@@ -26,7 +26,8 @@ public class Menu extends AppCompatActivity {
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) //Ad on top
+     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
@@ -49,14 +50,7 @@ public class Menu extends AppCompatActivity {
         int number = bundle.getInt("MyX");
 
 
-        Button Button2 = (Button) findViewById(R.id.button);
-        Button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(Menu.this,MainActivity.class);
-                startActivity(i);
-            }
-        });
+
 
 
 
