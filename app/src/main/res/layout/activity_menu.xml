@@ -13,7 +13,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="left"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="147dp"
         android:onClick="scrollToTop"
         android:src="@drawable/sausages" />
 
@@ -36,9 +37,57 @@
         app:radius="6dp"
         app:slideInterval="3000"
         app:strokeColor="#FF777777"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp" >
 
+    </com.synnapps.carouselview.CarouselView>
 
+    <ImageButton
+        android:id="@+id/imgbutton2"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="315dp"
+        android:onClick="scrollToTop"
+        android:src="@drawable/pig" />
+
+    <ImageButton
+        android:id="@+id/imgbutton3"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="232dp"
+        android:onClick="scrollToTop"
+        android:src="@drawable/hen" />
+
+    <ImageButton
+        android:id="@+id/imgbutton4"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="399dp"
+        android:onClick="scrollToTop"
+        android:src="@drawable/cow" />
+
+    <ImageButton
+        android:id="@+id/imgbutton5"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="232dp"
+        android:onClick="scrollToTop"
+        android:src="@drawable/" />
 
 
 </RelativeLayout>
