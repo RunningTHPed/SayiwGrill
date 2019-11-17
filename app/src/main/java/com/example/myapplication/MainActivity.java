@@ -37,13 +37,7 @@ public class   MainActivity extends AppCompatActivity {
         });
     }
 
-    private int[] mImages = new int[]{
-            R.drawable.image_1,R.drawable.image_2
-    };
 
-    private String[] mImageTitle = new String[]{
-            "Bear","Cat"
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

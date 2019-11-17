@@ -35,8 +35,14 @@ public class Menu extends AppCompatActivity {
             "Bear","Cat"
     };
 
+    public void scrollToTop(View v) { //if click botton
+        Toast.makeText(this, "Show some text on the screen.", Toast.LENGTH_LONG).show();
+
+    }
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) //Ad on top
+     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
@@ -59,14 +65,7 @@ public class Menu extends AppCompatActivity {
         int number = bundle.getInt("MyX");
 
 
-        Button Button2 = (Button) findViewById(R.id.button);
-        Button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i =new Intent(Menu.this,MainActivity.class);
-                startActivity(i);
-            }
-        });
+
 
         init();
         update();
