@@ -9,14 +9,14 @@
     <ImageButton
         android:id="@+id/imgbutton1"
         android:layout_width="65dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="left"
         android:layout_marginStart="0dp"
         android:layout_marginTop="147dp"
         android:onClick="scrollToTop"
-        android:src="@drawable/sausages" />
+        android:src="@drawable/cow" />
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carousel"
@@ -44,50 +44,76 @@
     <ImageButton
         android:id="@+id/imgbutton2"
         android:layout_width="65dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imgbutton1"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_gravity="left"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="315dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
         android:onClick="scrollToTop"
         android:src="@drawable/pig" />
 
     <ImageButton
         android:id="@+id/imgbutton3"
         android:layout_width="65dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imgbutton2"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_gravity="left"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="0dp"
         android:onClick="scrollToTop"
         android:src="@drawable/hen" />
 
     <ImageButton
         android:id="@+id/imgbutton4"
         android:layout_width="65dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imgbutton3"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_gravity="left"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="399dp"
+        android:layout_marginTop="0dp"
         android:onClick="scrollToTop"
-        android:src="@drawable/cow" />
+        android:src="@drawable/octopus" />
 
     <ImageButton
         android:id="@+id/imgbutton5"
         android:layout_width="65dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imgbutton4"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_gravity="left"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="0dp"
         android:onClick="scrollToTop"
-        android:src="@drawable/" />
+        android:src="@drawable/sausages" />
+
+    <ImageButton
+        android:id="@+id/imgbutton6"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgbutton5"
+        android:layout_gravity="left"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:onClick="scrollToTop"
+        android:src="@drawable/glass" />
+
+    <ImageButton
+        android:id="@+id/imgbutton7"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/imgbutton6"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:onClick="scrollToTop"
+        android:src="@drawable/vegetables" />
+
+
 
 
 </RelativeLayout>
