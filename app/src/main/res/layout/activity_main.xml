@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ยินดีตอนรับ!"
+        android:text="ยินดีต้อนรับ"
         android:textSize="48sp"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
