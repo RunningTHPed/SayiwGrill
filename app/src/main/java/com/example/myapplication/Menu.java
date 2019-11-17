@@ -35,10 +35,7 @@ public class Menu extends AppCompatActivity {
             "Bear","Cat"
     };
 
-    //public void scrollToTop(View v) { //if click botton
-      //  Toast.makeText(this, "Show some text on the screen.", Toast.LENGTH_LONG).show();
 
-    //}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) //Ad on top
