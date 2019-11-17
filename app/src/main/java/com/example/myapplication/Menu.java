@@ -35,10 +35,10 @@ public class Menu extends AppCompatActivity {
             "Bear","Cat"
     };
 
-    public void scrollToTop(View v) { //if click botton
-        Toast.makeText(this, "Show some text on the screen.", Toast.LENGTH_LONG).show();
+    //public void scrollToTop(View v) { //if click botton
+      //  Toast.makeText(this, "Show some text on the screen.", Toast.LENGTH_LONG).show();
 
-    }
+    //}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) //Ad on top
@@ -67,8 +67,8 @@ public class Menu extends AppCompatActivity {
 
 
 
-        init();
-        update();
+        //init();
+        //update();
 
     }
 
@@ -78,9 +78,9 @@ public class Menu extends AppCompatActivity {
     }
 
     public void init(){
-        addBox = (EditText)findViewById(R.id.addBox);
-        addButt = (Button)findViewById(R.id.addButt);
-        dataView = (ListView)findViewById(R.id.dataView);
+        //addBox = (EditText)findViewById(R.id.addBox);
+        //addButt = (Button)findViewById(R.id.addButt);
+        //dataView = (ListView)findViewById(R.id.dataView);
         mySQLConnect = new MySQLConnect(Menu.this);
     }
 }
