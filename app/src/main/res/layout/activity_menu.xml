@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#262626"
+    android:background="@drawable/background"
     tools:context=".Menu">
 
     <ImageButton
@@ -16,9 +16,10 @@
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
         android:layout_marginTop="187dp"
-        android:background="@drawable/imagebutton"
+        android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
-        android:src="@drawable/cow"/>
+        android:src="@drawable/cow"
+        android:padding="10dp">
 
     <TextView
         android:id="@+id/textBeef"
@@ -36,18 +37,18 @@
         android:textColor="#FFFFFF"
         android:textSize="32sp" />
 
-    <com.synnapps.carouselview.CarouselView
+    <!--<com.synnapps.carouselview.CarouselView
         android:id="@+id/carousel"
-        android:layout_width="1215dp"
-        android:layout_height="187dp"
+        android:layout_width="1028dp"
+        android:layout_height="414dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="255dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="251dp"
+        android:layout_marginEnd="-3dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
         app:fillColor="#FFFFFFFF"
@@ -55,9 +56,10 @@
         app:radius="6dp"
         app:slideInterval="3000"
         app:strokeColor="#FF777777"
-        app:strokeWidth="1dp" >
+        app:strokeWidth="1dp">
 
     </com.synnapps.carouselview.CarouselView>
+    -->
 
     <ImageButton
         android:id="@+id/imgbutton2"
@@ -68,7 +70,8 @@
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/imagebutton"
+        android:background="@drawable/buttondesign"
+        android:padding="10dp"
         android:scaleType="fitStart"
         android:src="@drawable/pig" />
 
@@ -97,9 +100,10 @@
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/imagebutton"
+        android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
-        android:src="@drawable/hen" />
+        android:src="@drawable/hen"
+        android:padding="10dp"/>
     <TextView
         android:id="@+id/textHen"
         android:layout_width="wrap_content"
@@ -125,9 +129,10 @@
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/imagebutton"
+        android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
-        android:src="@drawable/octopus" />
+        android:src="@drawable/octopus"
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/textSeafood"
@@ -154,9 +159,10 @@
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/imagebutton"
+        android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
-        android:src="@drawable/glass" />
+        android:src="@drawable/glass"
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/textBeverage"
@@ -183,9 +189,10 @@
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/imagebutton"
+        android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
-        android:src="@drawable/vegetables" />
+        android:src="@drawable/vegetables"
+        android:padding="10dp"/>
     <TextView
         android:id="@+id/textVegetable"
         android:layout_width="wrap_content"
@@ -202,7 +209,50 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/buttonPromotion"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginBottom="620dp"
+        android:background="@drawable/buttondesign"
+        android:text="Promotion"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="610dp"
+        android:layout_marginLeft="317dp"
+        android:layout_marginBottom="620dp"
+        android:background="@drawable/buttondesign"
+        android:text="Order"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="920dp"
+        android:layout_marginLeft="924dp"
+        android:layout_marginBottom="620dp"
+        android:background="@drawable/buttondesign"
+        android:text="Checkout"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 
 </RelativeLayout>
