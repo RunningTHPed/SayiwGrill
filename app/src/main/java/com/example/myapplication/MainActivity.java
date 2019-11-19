@@ -95,12 +95,10 @@ public class   MainActivity extends AppCompatActivity {
 
     public void ShowPopup(View v) {
         TextView txtclose,btnFollow;
-        //Button btnFollow;
         myDialog.setContentView(R.layout.custompopup);
         txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        //txtclose.setText("NO");
         TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุ");
+        textVideoName.setText("คุณมา 1 คนใช่หรือไม่");
         btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
 
         btnFollow.setOnClickListener(new View.OnClickListener() {
@@ -112,7 +110,6 @@ public class   MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -122,8 +119,90 @@ public class   MainActivity extends AppCompatActivity {
 
         myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         myDialog.show();
+    }
 
+    public void ShowPopup2(View v) {
+        TextView txtclose,btnFollow;
+        myDialog.setContentView(R.layout.custompopup);
+        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
+        textVideoName.setText("คุณมา 2 คนใช่หรือไม่");
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
 
+        btnFollow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Menu.class);
+                intent.putExtra("MyX", number);
+                //startActivity(new Intent(MainActivity.this, Menu.class));
+                startActivity(intent);
+            }
+        });
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
+    public void ShowPopup3(View v) {
+        TextView txtclose,btnFollow;
+        myDialog.setContentView(R.layout.custompopup);
+        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
+        textVideoName.setText("คุณมา 3 คนใช่หรือไม่");
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+
+        btnFollow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Menu.class);
+                intent.putExtra("MyX", number);
+                //startActivity(new Intent(MainActivity.this, Menu.class));
+                startActivity(intent);
+            }
+        });
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
+    }
+
+    public void ShowPopup4(View v) {
+        TextView txtclose,btnFollow;
+        myDialog.setContentView(R.layout.custompopup);
+        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
+        textVideoName.setText("คุณมา 4 คนใช่หรือไม่");
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+
+        btnFollow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Menu.class);
+                intent.putExtra("MyX", number);
+                //startActivity(new Intent(MainActivity.this, Menu.class));
+                startActivity(intent);
+            }
+        });
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
     }
 
 
