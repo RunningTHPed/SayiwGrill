@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -42,6 +43,7 @@ public class Menu extends AppCompatActivity {
      {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); // LANDSCAPE ONLY
 
             CarouselView carouselView = findViewById(R.id.carousel);
             carouselView.setPageCount(mImages.length);
