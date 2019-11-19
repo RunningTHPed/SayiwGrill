@@ -19,7 +19,9 @@
         android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
         android:src="@drawable/cow"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
 
     <TextView
         android:id="@+id/textBeef"
@@ -35,7 +37,8 @@
         android:clickable="false"
         android:text=": BEEF"
         android:textColor="#FFFFFF"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:layout_marginLeft="90dp" />
 
     <!--<com.synnapps.carouselview.CarouselView
         android:id="@+id/carousel"
@@ -73,7 +76,9 @@
         android:background="@drawable/buttondesign"
         android:padding="10dp"
         android:scaleType="fitStart"
-        android:src="@drawable/pig" />
+        android:src="@drawable/pig"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:id="@+id/textPig"
@@ -89,7 +94,8 @@
         android:clickable="false"
         android:text=": PIG"
         android:textColor="#FFFFFF"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:layout_marginLeft="90dp" />
 
     <ImageButton
         android:id="@+id/imgbutton3"
@@ -103,7 +109,9 @@
         android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
         android:src="@drawable/hen"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
     <TextView
         android:id="@+id/textHen"
         android:layout_width="wrap_content"
@@ -118,7 +126,8 @@
         android:clickable="false"
         android:text=": HEN"
         android:textColor="#FFFFFF"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        android:layout_marginLeft="90dp" />
 
     <ImageButton
         android:id="@+id/imgbutton4"
@@ -132,7 +141,9 @@
         android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
         android:src="@drawable/octopus"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:id="@+id/textSeafood"
@@ -148,7 +159,8 @@
         android:clickable="false"
         android:text=": SEA\n\tFOOD"
         android:textColor="#FFFFFF"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_marginLeft="90dp" />
 
     <ImageButton
         android:id="@+id/imgbutton5"
@@ -162,7 +174,9 @@
         android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
         android:src="@drawable/glass"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:id="@+id/textBeverage"
@@ -178,7 +192,8 @@
         android:clickable="false"
         android:text=": BEVERAGE"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginLeft="90dp" />
 
     <ImageButton
         android:id="@+id/imgbutton6"
@@ -192,7 +207,9 @@
         android:background="@drawable/buttondesign"
         android:scaleType="fitStart"
         android:src="@drawable/vegetables"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp" />
     <TextView
         android:id="@+id/textVegetable"
         android:layout_width="wrap_content"
@@ -207,7 +224,8 @@
         android:clickable="false"
         android:text=": VEGETABLES"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_marginLeft="90dp" />
 
     <Button
         android:id="@+id/buttonPromotion"

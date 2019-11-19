@@ -45,7 +45,7 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
          this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); // LANDSCAPE ONLY
 
-            CarouselView carouselView = findViewById(R.id.carousel);
+            /*CarouselView carouselView = findViewById(R.id.carousel);
             carouselView.setPageCount(mImages.length);
             carouselView.setImageListener(new ImageListener(){
                 @Override
@@ -58,7 +58,7 @@ public class Menu extends AppCompatActivity {
                 public void onClick(int position) {
                     Toast.makeText(Menu.this, mImageTitle[position], Toast.LENGTH_SHORT).show();
                 }
-            });
+            });*/
 
         Bundle bundle = getIntent().getExtras();
         int number = bundle.getInt("MyX");
