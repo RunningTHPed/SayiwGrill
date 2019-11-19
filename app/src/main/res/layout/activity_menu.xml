@@ -21,7 +21,7 @@
         android:src="@drawable/cow"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textBeef"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imgbutton1"
@@ -73,7 +73,7 @@
         android:src="@drawable/pig" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textPig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imgbutton2"
@@ -101,7 +101,7 @@
         android:scaleType="fitStart"
         android:src="@drawable/hen" />
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textHen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imgbutton3"
@@ -130,7 +130,7 @@
         android:src="@drawable/octopus" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textSeafood"
         android:layout_width="wrap_content"
         android:layout_height="61dp"
         android:layout_alignStart="@+id/imgbutton4"
@@ -159,7 +159,7 @@
         android:src="@drawable/glass" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textBeverage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imgbutton5"
@@ -187,7 +187,7 @@
         android:scaleType="fitStart"
         android:src="@drawable/vegetables" />
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textVegetable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imgbutton6"
