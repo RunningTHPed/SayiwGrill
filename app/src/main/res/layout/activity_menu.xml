@@ -4,18 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#262626"
     tools:context=".Menu">
 
     <ImageButton
         android:id="@+id/imgbutton1"
-        android:layout_width="65dp"
+        android:layout_width="220dp"
         android:layout_height="75dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="147dp"
-        android:src="@drawable/cow" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="187dp"
+        android:background="@drawable/imagebutton"
+        android:scaleType="fitStart"
+        android:src="@drawable/cow"/>
+
+    <TextView
+        android:id="@+id/textBeef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgbutton1"
+        android:layout_alignLeft="@+id/imgbutton1"
+        android:layout_alignTop="@+id/imgbutton1"
+        android:layout_alignBottom="@+id/imgbutton1"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="false"
+        android:text=": BEEF"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
 
     <com.synnapps.carouselview.CarouselView
         android:id="@+id/carousel"
@@ -42,69 +61,146 @@
 
     <ImageButton
         android:id="@+id/imgbutton2"
-        android:layout_width="65dp"
+        android:layout_width="220dp"
         android:layout_height="75dp"
         android:layout_below="@+id/imgbutton1"
         android:layout_alignParentStart="true"
         android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imagebutton"
+        android:scaleType="fitStart"
         android:src="@drawable/pig" />
+
+    <TextView
+        android:id="@+id/textPig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgbutton2"
+        android:layout_alignLeft="@+id/imgbutton2"
+        android:layout_alignTop="@+id/imgbutton2"
+        android:layout_alignBottom="@+id/imgbutton2"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="false"
+        android:text=": PIG"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
 
     <ImageButton
         android:id="@+id/imgbutton3"
-        android:layout_width="65dp"
+        android:layout_width="220dp"
         android:layout_height="75dp"
         android:layout_below="@+id/imgbutton2"
         android:layout_alignParentStart="true"
         android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imagebutton"
+        android:scaleType="fitStart"
         android:src="@drawable/hen" />
+    <TextView
+        android:id="@+id/textHen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgbutton3"
+        android:layout_alignLeft="@+id/imgbutton3"
+        android:layout_alignTop="@+id/imgbutton3"
+        android:layout_alignBottom="@+id/imgbutton3"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="false"
+        android:text=": HEN"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
 
     <ImageButton
         android:id="@+id/imgbutton4"
-        android:layout_width="65dp"
+        android:layout_width="220dp"
         android:layout_height="75dp"
         android:layout_below="@+id/imgbutton3"
         android:layout_alignParentStart="true"
         android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imagebutton"
+        android:scaleType="fitStart"
         android:src="@drawable/octopus" />
+
+    <TextView
+        android:id="@+id/textSeafood"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignStart="@+id/imgbutton4"
+        android:layout_alignLeft="@+id/imgbutton4"
+        android:layout_alignTop="@+id/imgbutton4"
+        android:layout_alignBottom="@+id/imgbutton4"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:clickable="false"
+        android:text=": SEA\n\tFOOD"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
     <ImageButton
         android:id="@+id/imgbutton5"
-        android:layout_width="65dp"
+        android:layout_width="220dp"
         android:layout_height="75dp"
         android:layout_below="@+id/imgbutton4"
         android:layout_alignParentStart="true"
         android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/sausages" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imagebutton"
+        android:scaleType="fitStart"
+        android:src="@drawable/glass" />
+
+    <TextView
+        android:id="@+id/textBeverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgbutton5"
+        android:layout_alignLeft="@+id/imgbutton5"
+        android:layout_alignTop="@+id/imgbutton5"
+        android:layout_alignBottom="@+id/imgbutton5"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="false"
+        android:text=": BEVERAGE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
     <ImageButton
         android:id="@+id/imgbutton6"
-        android:layout_width="65dp"
+        android:layout_width="220dp"
         android:layout_height="75dp"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/imgbutton5"
-        android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:src="@drawable/glass" />
-
-    <ImageButton
-        android:id="@+id/imgbutton7"
-        android:layout_width="65dp"
-        android:layout_height="75dp"
-        android:layout_below="@+id/imgbutton6"
         android:layout_alignParentStart="true"
         android:layout_gravity="left"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imagebutton"
+        android:scaleType="fitStart"
         android:src="@drawable/vegetables" />
+    <TextView
+        android:id="@+id/textVegetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imgbutton6"
+        android:layout_alignLeft="@+id/imgbutton6"
+        android:layout_alignTop="@+id/imgbutton6"
+        android:layout_alignBottom="@+id/imgbutton6"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="22dp"
+        android:clickable="false"
+        android:text=": VEGETABLES"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
 
 
