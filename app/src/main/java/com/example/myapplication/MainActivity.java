@@ -64,7 +64,7 @@ public class   MainActivity extends AppCompatActivity {
             }
         });*/
 
-        Button Button2 = (Button) findViewById(R.id.button2);
+        /*Button Button2 = (Button) findViewById(R.id.button2);
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -89,94 +89,43 @@ public class   MainActivity extends AppCompatActivity {
                 number = 4;
                 popup();
             }
-        });
+        });*/
     }
 
 
-    public void ShowPopup1(View v) {
-        TextView txtclose;
-        Button btnFollow;
+    public void ShowPopup(View v) {
+        TextView txtclose,btnFollow;
+        //Button btnFollow;
         myDialog.setContentView(R.layout.custompopup);
         txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        txtclose.setText("NO");
+        //txtclose.setText("NO");
         TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
         textVideoName.setText("คุ");
         btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+
+        btnFollow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Menu.class);
+                intent.putExtra("MyX", number);
+                //startActivity(new Intent(MainActivity.this, Menu.class));
+                startActivity(intent);
+            }
+        });
+
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 myDialog.dismiss();
             }
         });
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         myDialog.show();
 
 
     }
-    public void ShowPopup2(View v) {
-        TextView txtclose;
-        Button btnFollow;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        txtclose.setText("NO");
-        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุ");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        myDialog.show();
-
-
-    }
-    public void ShowPopup3(View v) {
-        TextView txtclose;
-        Button btnFollow;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        txtclose.setText("NO");
-        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุ");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-        myDialog.show();
-
-
-    }
-    public void ShowPopup4(View v) {
-        TextView txtclose;
-        Button btnFollow;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        txtclose.setText("NO");
-        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุ");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-        myDialog.show();
-
-
-    }
 
 
 }
