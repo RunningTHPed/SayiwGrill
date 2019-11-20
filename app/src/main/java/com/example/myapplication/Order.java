@@ -1,10 +1,12 @@
 package com.example.myapplication;
 
+import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Order extends AppCompatActivity {
+
     public void openPromotion(View v) {
         setContentView(R.layout.promotion_page);
     }
@@ -13,5 +15,11 @@ public class Order extends AppCompatActivity {
     }
     public void openCheckout(View v) {
         setContentView(R.layout.checkout_page);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.promotion_page);
     }
 }
