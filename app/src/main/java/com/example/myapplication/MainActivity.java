@@ -53,52 +53,53 @@ public class   MainActivity extends AppCompatActivity {
         myDialog = new Dialog(this);
 
 
-        /*Button Button1 = (Button) findViewById(R.id.button1);
+        Button Button1 = (Button) findViewById(R.id.btn1);
         Button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 number = 1;
-                //popup();
-                //ShowPopup();
+                ShowPopup();
+
+
 
             }
-        });*/
+        });
 
-        /*Button Button2 = (Button) findViewById(R.id.button2);
+        Button Button2 = (Button) findViewById(R.id.btn2);
         Button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 number = 2;
-                popup();
+                ShowPopup();
             }
         });
 
-        Button Button3 = (Button) findViewById(R.id.button3);
+        Button Button3 = (Button) findViewById(R.id.btn3);
         Button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 number = 3;
-                popup();
+                ShowPopup();
             }
         });
 
-        Button Button4 = (Button) findViewById(R.id.button4);
+        Button Button4 = (Button) findViewById(R.id.btn4);
         Button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 number = 4;
-                popup();
+                ShowPopup();
             }
-        });*/
+        });
     }
 
 
-    public void ShowPopup(View v) {
+    public void ShowPopup() {
         TextView txtclose,btnFollow;
         myDialog.setContentView(R.layout.custompopup);
         txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
         TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุณมา 1 คนใช่หรือไม่");
+        textVideoName.setText("คุณมา "+ number +" คนใช่หรือไม่");
         btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
 
         btnFollow.setOnClickListener(new View.OnClickListener() {
@@ -121,89 +122,11 @@ public class   MainActivity extends AppCompatActivity {
         myDialog.show();
     }
 
-    public void ShowPopup2(View v) {
-        TextView txtclose,btnFollow;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุณมา 2 คนใช่หรือไม่");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
 
-        btnFollow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                //startActivity(new Intent(MainActivity.this, Menu.class));
-                startActivity(intent);
-            }
-        });
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
 
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        myDialog.show();
-    }
 
-    public void ShowPopup3(View v) {
-        TextView txtclose,btnFollow;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุณมา 3 คนใช่หรือไม่");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
 
-        btnFollow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                //startActivity(new Intent(MainActivity.this, Menu.class));
-                startActivity(intent);
-            }
-        });
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
 
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        myDialog.show();
-    }
-
-    public void ShowPopup4(View v) {
-        TextView txtclose,btnFollow;
-        myDialog.setContentView(R.layout.custompopup);
-        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
-        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
-        textVideoName.setText("คุณมา 4 คนใช่หรือไม่");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
-
-        btnFollow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
-                //startActivity(new Intent(MainActivity.this, Menu.class));
-                startActivity(intent);
-            }
-        });
-        txtclose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.dismiss();
-            }
-        });
-
-        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        myDialog.show();
-    }
 
 
 
