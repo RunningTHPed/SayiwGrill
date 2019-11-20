@@ -36,7 +36,7 @@
 
     <Button
 
-        android:onClick="ShowPopup"
+        android:id="@+id/btn1"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttondesign"
@@ -50,8 +50,8 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:onClick="ShowPopup2"
         android:layout_width="250dp"
+        android:id="@+id/btn2"
         android:layout_height="wrap_content"
         android:background="@drawable/buttondesign"
         android:text="2คน"
@@ -64,7 +64,10 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <Button
+
         android:onClick="ShowPopup3"
+
+        android:id="@+id/btn3"
 
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -79,7 +82,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:onClick="ShowPopup4"
+        android:id="@+id/btn4"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttondesign"
