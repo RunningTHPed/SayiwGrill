@@ -65,7 +65,6 @@
 
     <Button
 
-        android:onClick="ShowPopup3"
 
         android:id="@+id/btn3"
 

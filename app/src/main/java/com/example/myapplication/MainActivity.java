@@ -94,7 +94,7 @@ public class   MainActivity extends AppCompatActivity {
     }
 
 
-    public void ShowPopup() {
+    public void ShowPopup() { //แสดง popup ถาม
         TextView txtclose,btnFollow;
         myDialog.setContentView(R.layout.custompopup);
         txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
