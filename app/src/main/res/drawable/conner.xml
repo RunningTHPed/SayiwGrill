@@ -4,7 +4,7 @@
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid
-        android:color="#ffffffff"/>
+        android:color="#ffffff"/>
 
     <size android:width="500dp"
           android:height="350dp"
@@ -14,10 +14,7 @@
         android:right="1dp"
         android:bottom="1dp" />
 
-    <corners android:bottomRightRadius="50dp"
-        android:bottomLeftRadius="50dp"
-        android:topLeftRadius="50dp"
-        android:topRightRadius="50dp" />
+    <corners android:radius="50dp"/>
 </shape>
 
 

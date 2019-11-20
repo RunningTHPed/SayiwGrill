@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Menu">
+    tools:context=".Promotion">
 
     <ImageButton
         android:id="@+id/imgbutton1"
@@ -238,7 +238,7 @@
         android:layout_marginStart="300dp"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="95dp"
-        android:background="@drawable/buttondesign"
+        android:background="@drawable/buttondesign2"
         android:text="Promotion"
         android:textColor="#FFFFFF"
         android:textSize="30sp" />

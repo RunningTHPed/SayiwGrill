@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Menu">
+    tools:context=".Checkout">
 
     <ImageButton
         android:id="@+id/imgbutton1"
@@ -270,7 +270,7 @@
         android:layout_marginStart="920dp"
         android:layout_marginLeft="924dp"
         android:layout_marginTop="95dp"
-        android:background="@drawable/buttondesign"
+        android:background="@drawable/buttondesign2"
         android:text="Checkout"
         android:textColor="#FFFFFF"
         android:textSize="30sp" />
