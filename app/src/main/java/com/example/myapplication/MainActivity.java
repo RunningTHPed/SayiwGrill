@@ -20,7 +20,7 @@ public class   MainActivity extends AppCompatActivity {
     int number = 0;
     Dialog myDialog;
 
-    public void popup() {
+    /*public void popup() {
 
         AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("")
@@ -40,7 +40,7 @@ public class   MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
+    }*/
 
 
     @Override
