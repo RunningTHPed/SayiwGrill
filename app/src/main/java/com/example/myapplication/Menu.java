@@ -28,6 +28,7 @@ public class Menu extends AppCompatActivity {
     private MySQLConnect mySQLConnect;
     private List<String>items;
 
+
     private int[] mImages = new int[]{
             R.drawable.image_1,R.drawable.image_2
     };
@@ -36,15 +37,12 @@ public class Menu extends AppCompatActivity {
             "Bear","Cat"
     };
 
-    public void openPromotion(View v) {
-        setContentView(R.layout.promotion_page);
+    public void openCow(View v) {
+        ImageView imageView=(ImageView)findViewById(R.id.pic1);
+        imageView.setImageResource(R.drawable.cow);
     }
-    public void openOrder(View v) {
-        setContentView(R.layout.order_page);
-    }
-    public void openCheckout(View v) {
-        setContentView(R.layout.checkout_page);
-    }
+    public void openOrder(View v) { }
+    public void openCheckout(View v) { }
 
 
     @Override
