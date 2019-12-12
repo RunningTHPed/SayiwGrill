@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -27,6 +28,10 @@ public class Menu extends AppCompatActivity {
     private ListView dataView;
     private MySQLConnect mySQLConnect;
     private List<String>items;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager layoutManager;
+
 
     private int[] mImages = new int[]{
             R.drawable.image_1,R.drawable.image_2
@@ -53,6 +58,7 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
          this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); // LANDSCAPE ONLY
+         //recyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
             /*CarouselView carouselView = findViewById(R.id.carousel);
             carouselView.setPageCount(mImages.length);

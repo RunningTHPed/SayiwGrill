@@ -13,14 +13,14 @@
 
     <Button
         android:id="@+id/btnfollow"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="241dp"
+        android:layout_height="63dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginLeft="94dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
         android:background="@null"
         android:text="YES"
         android:textColor="#000000"
@@ -28,18 +28,18 @@
 
     <Button
         android:id="@+id/txtclose"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="63dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="94dp"
-        android:layout_marginRight="72dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
         android:background="@null"
-        android:textSize="20sp"
+        android:text="No"
         android:textColor="#000000"
-        android:text="No" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textVideoName"
