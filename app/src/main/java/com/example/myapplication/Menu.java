@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.synnapps.carouselview.CarouselView;
@@ -38,28 +39,132 @@ public class Menu extends AppCompatActivity {
     };
 
     public void openBeef(View v) {
-        ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.a5);
+        ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
+        ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
+        ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
+        TextView textViewprice1 = (TextView)findViewById(R.id.price1);
+        TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
+        TextView textViewprice2 = (TextView)findViewById(R.id.price2);
+        TextView textViewfood3 = (TextView)findViewById(R.id.food_name3);
+        TextView textViewprice3 = (TextView)findViewById(R.id.price3);
+        TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
+        TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        textViewfood1.setText("Brisket");
+        textViewfood2.setText("Rib eye");
+        textViewfood3.setText("Chuck eye");
+        textViewfood4.setText("Wagyu");
+        textViewprice1.setText("69 BATH");
+        textViewprice2.setText("69 BATH");
+        textViewprice3.setText("69 BATH");
+        textViewprice4.setText("199 BATH");
+
     }
     public void openPork(View v) {
-        ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.pork_shabu);
+        ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
+        ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
+        ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
+        TextView textViewprice1 = (TextView)findViewById(R.id.price1);
+        TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
+        TextView textViewprice2 = (TextView)findViewById(R.id.price2);
+        TextView textViewfood3 = (TextView)findViewById(R.id.food_name3);
+        TextView textViewprice3 = (TextView)findViewById(R.id.price3);
+        TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
+        TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        textViewfood1.setText("Beacon");
+        textViewfood2.setText("Pork Neck");
+        textViewfood3.setText("Sirloin");
+        textViewfood4.setText("Tenderloin");
+        textViewprice1.setText("20 BATH");
+        textViewprice2.setText("30 BATH");
+        textViewprice3.setText("30 BATH");
+        textViewprice4.setText("30 BATH");
     }
     public void openChicken(View v) {
-        ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.chicken_slice);
+        ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
+        ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
+        ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
+        TextView textViewprice1 = (TextView)findViewById(R.id.price1);
+        TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
+        TextView textViewprice2 = (TextView)findViewById(R.id.price2);
+        TextView textViewfood3 = (TextView)findViewById(R.id.food_name3);
+        TextView textViewprice3 = (TextView)findViewById(R.id.price3);
+        TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
+        TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        textViewfood1.setText("ฺBreast");
+        textViewfood2.setText("Nugget");
+        textViewfood3.setText("Pepper Chiken");
+        textViewfood4.setText("Fired Chiken");
+        textViewprice1.setText("20 BATH");
+        textViewprice2.setText("20 BATH");
+        textViewprice3.setText("20 BATH");
+        textViewprice4.setText("20 BATH");
     }
     public void openSeafood(View v) {
-        ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.squid);
+        ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
+        ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
+        ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
+        TextView textViewprice1 = (TextView)findViewById(R.id.price1);
+        TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
+        TextView textViewprice2 = (TextView)findViewById(R.id.price2);
+        TextView textViewfood3 = (TextView)findViewById(R.id.food_name3);
+        TextView textViewprice3 = (TextView)findViewById(R.id.price3);
+        TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
+        TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        textViewfood1.setText("Squid");
+        textViewfood2.setText("Dolly fish");
+        textViewfood3.setText("Shrimp");
+        textViewfood4.setText("Scallops");
+        textViewprice1.setText("30 BATH");
+        textViewprice2.setText("30 BATH");
+        textViewprice3.setText("30 BATH");
+        textViewprice4.setText("30 BATH");
+
     }
     public void openBeverage(View v) {
-        ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.beer);
+        ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
+        ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
+        ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
+        TextView textViewprice1 = (TextView)findViewById(R.id.price1);
+        TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
+        TextView textViewprice2 = (TextView)findViewById(R.id.price2);
+        TextView textViewfood3 = (TextView)findViewById(R.id.food_name3);
+        TextView textViewprice3 = (TextView)findViewById(R.id.price3);
+        TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
+        TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        textViewfood1.setText("Plain water");
+        textViewfood2.setText("Beer");
+        textViewfood3.setText("Coke");
+        textViewfood4.setText("Ice");
+        textViewprice1.setText("10 BATH");
+        textViewprice2.setText("50 BATH");
+        textViewprice3.setText("20 BATH");
+        textViewprice4.setText("10 BATH");
     }
     public void openVegetable(View v) {
-        ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.weed);
+        ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
+        ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
+        ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
+        TextView textViewprice1 = (TextView)findViewById(R.id.price1);
+        TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
+        TextView textViewprice2 = (TextView)findViewById(R.id.price2);
+        TextView textViewfood3 = (TextView)findViewById(R.id.food_name3);
+        TextView textViewprice3 = (TextView)findViewById(R.id.price3);
+        TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
+        TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        textViewfood1.setText("Eringii ");
+        textViewfood2.setText("Onion");
+        textViewfood3.setText("Asparagus");
+        textViewfood4.setText("Baby Corn");
+        textViewprice1.setText("10 BATH");
+        textViewprice2.setText("20 BATH");
+        textViewprice3.setText("10 BATH");
+        textViewprice4.setText("10 BATH");
     }
 
 
