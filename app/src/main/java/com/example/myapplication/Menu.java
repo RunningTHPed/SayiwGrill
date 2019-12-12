@@ -37,12 +37,30 @@ public class Menu extends AppCompatActivity {
             "Bear","Cat"
     };
 
-    public void openCow(View v) {
+    public void openBeef(View v) {
         ImageView imageView=(ImageView)findViewById(R.id.pic1);
-        imageView.setImageResource(R.drawable.cow);
+        imageView.setImageResource(R.drawable.a5);
     }
-    public void openOrder(View v) { }
-    public void openCheckout(View v) { }
+    public void openPork(View v) {
+        ImageView imageView=(ImageView)findViewById(R.id.pic1);
+        imageView.setImageResource(R.drawable.pork_shabu);
+    }
+    public void openChicken(View v) {
+        ImageView imageView=(ImageView)findViewById(R.id.pic1);
+        imageView.setImageResource(R.drawable.chicken_slice);
+    }
+    public void openSeafood(View v) {
+        ImageView imageView=(ImageView)findViewById(R.id.pic1);
+        imageView.setImageResource(R.drawable.squid);
+    }
+    public void openBeverage(View v) {
+        ImageView imageView=(ImageView)findViewById(R.id.pic1);
+        imageView.setImageResource(R.drawable.beer);
+    }
+    public void openVegetable(View v) {
+        ImageView imageView=(ImageView)findViewById(R.id.pic1);
+        imageView.setImageResource(R.drawable.weed);
+    }
 
 
     @Override
