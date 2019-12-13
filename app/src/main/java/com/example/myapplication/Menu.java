@@ -28,6 +28,11 @@ public class Menu extends AppCompatActivity {
     private ListView dataView;
     private MySQLConnect mySQLConnect;
     private List<String>items;
+    int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
+    int brisket,ribeye,chuckeye,wagyu;
+    int beacon,porkneck,sirlon,tenderloin;
+    int breast,nugget,pepperchiken,firedchiken;
+    int squid,dollydish,shrimp,scallops;
 
 
     private int[] mImages = new int[]{
