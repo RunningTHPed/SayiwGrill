@@ -28,6 +28,11 @@ public class Menu extends AppCompatActivity {
     private ListView dataView;
     private MySQLConnect mySQLConnect;
     private List<String>items;
+    int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
+    int brisket,ribeye,chuckeye,wagyu;
+    int beacon,porkneck,sirlon,tenderloin;
+    int breast,nugget,pepperchiken,firedchiken;
+    int squid,dollydish,shrimp,scallops;
 
 
     private int[] mImages = new int[]{
@@ -42,6 +47,7 @@ public class Menu extends AppCompatActivity {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        ImageView imageViewpic4=(ImageView)findViewById(R.id.pic4);
         TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
         TextView textViewprice1 = (TextView)findViewById(R.id.price1);
         TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
@@ -58,12 +64,19 @@ public class Menu extends AppCompatActivity {
         textViewprice2.setText("69 BATH");
         textViewprice3.setText("69 BATH");
         textViewprice4.setText("199 BATH");
+        imageViewpic1.setImageResource(R.drawable.brisket);
+        imageViewpic2.setImageResource(R.drawable.ribeye);
+        imageViewpic3.setImageResource(R.drawable.shuckeye);
+        imageViewpic4.setImageResource(R.drawable.vagil);
+
+
 
     }
     public void openPork(View v) {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        ImageView imageViewpic4=(ImageView)findViewById(R.id.pic4);
         TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
         TextView textViewprice1 = (TextView)findViewById(R.id.price1);
         TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
@@ -80,11 +93,16 @@ public class Menu extends AppCompatActivity {
         textViewprice2.setText("30 BATH");
         textViewprice3.setText("30 BATH");
         textViewprice4.setText("30 BATH");
+        imageViewpic1.setImageResource(R.drawable.becon);
+        imageViewpic2.setImageResource(R.drawable.sunneck);
+        imageViewpic3.setImageResource(R.drawable.sunout);
+        imageViewpic4.setImageResource(R.drawable.sunin);
     }
     public void openChicken(View v) {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        ImageView imageViewpic4=(ImageView)findViewById(R.id.pic4);
         TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
         TextView textViewprice1 = (TextView)findViewById(R.id.price1);
         TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
@@ -101,6 +119,10 @@ public class Menu extends AppCompatActivity {
         textViewprice2.setText("20 BATH");
         textViewprice3.setText("20 BATH");
         textViewprice4.setText("20 BATH");
+        imageViewpic1.setImageResource(R.drawable.breast);
+        imageViewpic2.setImageResource(R.drawable.nugget);
+        imageViewpic3.setImageResource(R.drawable.blackpepper);
+        imageViewpic4.setImageResource(R.drawable.kaitod);
     }
     public void openSeafood(View v) {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
