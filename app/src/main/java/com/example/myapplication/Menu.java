@@ -47,6 +47,7 @@ public class Menu extends AppCompatActivity {
 
     public void openBeef(View v) {
 
+        location1 = location2 = location3 = location4 = 0;
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -71,6 +72,7 @@ public class Menu extends AppCompatActivity {
         imageViewpic2.setImageResource(R.drawable.ribeye);
         imageViewpic3.setImageResource(R.drawable.shuckeye);
         imageViewpic4.setImageResource(R.drawable.vagil);
+
 
 
 
@@ -132,6 +134,15 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openPork(View v) {
+        location1 = location2 = location3 = location4 = 0;
+        TextView textView1 = (TextView)findViewById(R.id.num1);
+        TextView textView2 = (TextView)findViewById(R.id.num2);
+        TextView textView3 = (TextView)findViewById(R.id.num3);
+        TextView textView4 = (TextView)findViewById(R.id.num4);
+        textView1.setText(""+location1);
+        textView2.setText(""+location2);
+        textView3.setText(""+location3);
+        textView4.setText(""+location4);
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -158,6 +169,15 @@ public class Menu extends AppCompatActivity {
         imageViewpic4.setImageResource(R.drawable.sunin);
     }
     public void openChicken(View v) {
+        location1 = location2 = location3 = location4 = 0;
+        TextView textView1 = (TextView)findViewById(R.id.num1);
+        TextView textView2 = (TextView)findViewById(R.id.num2);
+        TextView textView3 = (TextView)findViewById(R.id.num3);
+        TextView textView4 = (TextView)findViewById(R.id.num4);
+        textView1.setText(""+location1);
+        textView2.setText(""+location2);
+        textView3.setText(""+location3);
+        textView4.setText(""+location4);
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -184,6 +204,15 @@ public class Menu extends AppCompatActivity {
         imageViewpic4.setImageResource(R.drawable.kaitod);
     }
     public void openSeafood(View v) {
+        location1 = location2 = location3 = location4 = 0;
+        TextView textView1 = (TextView)findViewById(R.id.num1);
+        TextView textView2 = (TextView)findViewById(R.id.num2);
+        TextView textView3 = (TextView)findViewById(R.id.num3);
+        TextView textView4 = (TextView)findViewById(R.id.num4);
+        textView1.setText(""+location1);
+        textView2.setText(""+location2);
+        textView3.setText(""+location3);
+        textView4.setText(""+location4);
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -211,6 +240,15 @@ public class Menu extends AppCompatActivity {
 
     }
     public void openBeverage(View v) {
+        location1 = location2 = location3 = location4 = 0;
+        TextView textView1 = (TextView)findViewById(R.id.num1);
+        TextView textView2 = (TextView)findViewById(R.id.num2);
+        TextView textView3 = (TextView)findViewById(R.id.num3);
+        TextView textView4 = (TextView)findViewById(R.id.num4);
+        textView1.setText(""+location1);
+        textView2.setText(""+location2);
+        textView3.setText(""+location3);
+        textView4.setText(""+location4);
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -237,6 +275,15 @@ public class Menu extends AppCompatActivity {
         textViewprice4.setText("10 BATH");
     }
     public void openVegetable(View v) {
+        location1 = location2 = location3 = location4 = 0;
+        TextView textView1 = (TextView)findViewById(R.id.num1);
+        TextView textView2 = (TextView)findViewById(R.id.num2);
+        TextView textView3 = (TextView)findViewById(R.id.num3);
+        TextView textView4 = (TextView)findViewById(R.id.num4);
+        textView1.setText(""+location1);
+        textView2.setText(""+location2);
+        textView3.setText(""+location3);
+        textView4.setText(""+location4);
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
