@@ -95,40 +95,40 @@ public class Menu extends AppCompatActivity {
 
     }
     public void ominus2 (View v) {
-        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
-        if(location1 != 0)
-            location1 = location1 - 1;
-        textViewnum1.setText(""+location1);
+        TextView textViewnum1 = (TextView)findViewById(R.id.num2);
+        if(location2 != 0)
+            location2 = location2 - 1;
+        textViewnum1.setText(""+location2);
 
     }
     public void oplus2(View v){
-        location1 = location1 + 1;
-        TextView textView = (TextView)findViewById(R.id.num1);
-        textView.setText(""+location1);
+        location2 = location2 + 1;
+        TextView textView = (TextView)findViewById(R.id.num2);
+        textView.setText(""+location2);
     }
     public void ominus3 (View v) {
-        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
-        if(location1 != 0)
-            location1 = location1 - 1;
-        textViewnum1.setText(""+location1);
+        TextView textViewnum1 = (TextView)findViewById(R.id.num3);
+        if(location3 != 0)
+            location3 = location3 - 1;
+        textViewnum1.setText(""+location3);
 
     }
     public void oplus3(View v){
-        location1 = location1 + 1;
-        TextView textView = (TextView)findViewById(R.id.num1);
-        textView.setText(""+location1);
+        location3 = location3 + 1;
+        TextView textView = (TextView)findViewById(R.id.num3);
+        textView.setText(""+location3);
     }
     public void ominus4 (View v) {
-        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
-        if(location1 != 0)
-            location1 = location1 - 1;
-        textViewnum1.setText(""+location1);
+        TextView textViewnum1 = (TextView)findViewById(R.id.num4);
+        if(location4 != 0)
+            location4 = location4 - 1;
+        textViewnum1.setText(""+location4);
 
     }
     public void oplus4 (View v){
-        location1 = location1 + 1;
-        TextView textView = (TextView)findViewById(R.id.num1);
-        textView.setText(""+location1);
+        location4 = location4 + 1;
+        TextView textView = (TextView)findViewById(R.id.num4);
+        textView.setText(""+location4);
     }
 
     public void openPork(View v) {
