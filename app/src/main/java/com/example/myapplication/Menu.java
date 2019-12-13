@@ -35,6 +35,8 @@ public class Menu extends AppCompatActivity {
     int squid,dollydish,shrimp,scallops;
 
 
+
+
     private int[] mImages = new int[]{
             R.drawable.image_1,R.drawable.image_2
     };
