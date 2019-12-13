@@ -123,6 +123,7 @@ public class Menu extends AppCompatActivity {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        ImageView imageViewpic4=(ImageView)findViewById(R.id.pic4);
         TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
         TextView textViewprice1 = (TextView)findViewById(R.id.price1);
         TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
@@ -131,6 +132,10 @@ public class Menu extends AppCompatActivity {
         TextView textViewprice3 = (TextView)findViewById(R.id.price3);
         TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
         TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        imageViewpic1.setImageResource(R.drawable.squid);
+        imageViewpic2.setImageResource(R.drawable.dolly);
+        imageViewpic3.setImageResource(R.drawable.shrimp);
+        imageViewpic4.setImageResource(R.drawable.scallobs);
         textViewfood1.setText("Squid");
         textViewfood2.setText("Dolly fish");
         textViewfood3.setText("Shrimp");
@@ -145,6 +150,7 @@ public class Menu extends AppCompatActivity {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        ImageView imageViewpic4=(ImageView)findViewById(R.id.pic4);
         TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
         TextView textViewprice1 = (TextView)findViewById(R.id.price1);
         TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
@@ -153,6 +159,10 @@ public class Menu extends AppCompatActivity {
         TextView textViewprice3 = (TextView)findViewById(R.id.price3);
         TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
         TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        imageViewpic1.setImageResource(R.drawable.water);
+        imageViewpic2.setImageResource(R.drawable.beer);
+        imageViewpic3.setImageResource(R.drawable.coke);
+        imageViewpic4.setImageResource(R.drawable.ice);
         textViewfood1.setText("Plain water");
         textViewfood2.setText("Beer");
         textViewfood3.setText("Coke");
@@ -166,6 +176,7 @@ public class Menu extends AppCompatActivity {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
+        ImageView imageViewpic4=(ImageView)findViewById(R.id.pic4);
         TextView textViewfood1 = (TextView)findViewById(R.id.food_name1);
         TextView textViewprice1 = (TextView)findViewById(R.id.price1);
         TextView textViewfood2 = (TextView)findViewById(R.id.food_name2);
@@ -174,6 +185,10 @@ public class Menu extends AppCompatActivity {
         TextView textViewprice3 = (TextView)findViewById(R.id.price3);
         TextView textViewfood4 = (TextView)findViewById(R.id.food_name4);
         TextView textViewprice4 = (TextView)findViewById(R.id.price4);
+        imageViewpic1.setImageResource(R.drawable.mushroom);
+        imageViewpic2.setImageResource(R.drawable.onion);
+        imageViewpic3.setImageResource(R.drawable.aspalagas);
+        imageViewpic4.setImageResource(R.drawable.babycorn);
         textViewfood1.setText("Eringii ");
         textViewfood2.setText("Onion");
         textViewfood3.setText("Asparagus");
