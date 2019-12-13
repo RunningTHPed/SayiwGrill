@@ -51,15 +51,22 @@
 
     <TextView
         android:id="@+id/num4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/num1"
         android:layout_alignRight="@+id/num1"
         android:layout_alignBottom="@+id/num2"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-254dp"
-        android:text="0"/>
+
+        android:text="0"
+
+        android:textAlignment="center"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"/>
+
 
     <Button
         android:id="@+id/plus4"
@@ -89,15 +96,22 @@
 
     <TextView
         android:id="@+id/num3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/num1"
         android:layout_alignRight="@+id/num1"
         android:layout_alignBottom="@+id/num2"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-127dp"
-        android:text="0" />
+
+        android:text="0"
+
+        android:textAlignment="center"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"  />
+
 
     <Button
         android:id="@+id/minus3"
@@ -127,15 +141,22 @@
 
     <TextView
         android:id="@+id/num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignEnd="@+id/num1"
         android:layout_alignRight="@+id/num1"
         android:layout_alignBottom="@+id/plus2"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-        android:text="0" />
+
+        android:text="0" 
+
+        android:textAlignment="center"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
 
     <Button
         android:id="@+id/plus2"
@@ -605,7 +626,24 @@
 
 
 
+<<<<<<< HEAD
 
+=======
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/plus1"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/plus1"
+        android:layout_toLeftOf="@+id/plus1"
+        android:textAlignment="center"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+>>>>>>> 56c9ba802bfc1a7d516263d48a98118fbabbadcb
 
 
 </RelativeLayout>
