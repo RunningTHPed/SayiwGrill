@@ -95,28 +95,40 @@ public class Menu extends AppCompatActivity {
 
     }
     public void ominus2 (View v) {
-
+        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
+        if(location1 != 0)
+            location1 = location1 - 1;
+        textViewnum1.setText(""+location1);
 
     }
     public void oplus2(View v){
-
-
+        location1 = location1 + 1;
+        TextView textView = (TextView)findViewById(R.id.num1);
+        textView.setText(""+location1);
     }
     public void ominus3 (View v) {
-
+        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
+        if(location1 != 0)
+            location1 = location1 - 1;
+        textViewnum1.setText(""+location1);
 
     }
     public void oplus3(View v){
-
-
+        location1 = location1 + 1;
+        TextView textView = (TextView)findViewById(R.id.num1);
+        textView.setText(""+location1);
     }
     public void ominus4 (View v) {
-
+        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
+        if(location1 != 0)
+            location1 = location1 - 1;
+        textViewnum1.setText(""+location1);
 
     }
     public void oplus4 (View v){
-
-
+        location1 = location1 + 1;
+        TextView textView = (TextView)findViewById(R.id.num1);
+        textView.setText(""+location1);
     }
 
     public void openPork(View v) {
