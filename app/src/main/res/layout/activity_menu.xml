@@ -7,6 +7,48 @@
     android:background="@drawable/background"
     tools:context=".Menu">
 
+
+
+
+    <Button
+        android:id="@+id/minus1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/num1"
+        android:layout_toLeftOf="@+id/num1"
+        android:onClick="ominus1"
+        android:minWidth="40dp"
+        android:minHeight="40dp"
+        android:text="-" />
+    <Button
+        android:id="@+id/plus1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="456dp"
+        android:onClick="oplus1"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/plus1"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/plus1"
+        android:layout_toLeftOf="@+id/plus1"
+        android:text="0" />
+
     <TextView
         android:id="@+id/num4"
         android:layout_width="wrap_content"
@@ -17,7 +59,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-254dp"
-        android:text="TextView" />
+        android:text="0"/>
 
     <Button
         android:id="@+id/plus4"
@@ -29,6 +71,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="75dp"
+        android:onClick="oplus4"
         android:text="+" />
 
     <Button
@@ -41,6 +84,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-254dp"
+        android:onClick="ominus4"
         android:text="-" />
 
     <TextView
@@ -53,7 +97,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-127dp"
-        android:text="TextView" />
+        android:text="0" />
 
     <Button
         android:id="@+id/minus3"
@@ -65,6 +109,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-127dp"
+        android:onClick="ominus3"
         android:text="-" />
 
     <Button
@@ -77,6 +122,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="203dp"
+        android:onClick="oplus3"
         android:text="+" />
 
     <TextView
@@ -89,7 +135,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-        android:text="TextView" />
+        android:text="0" />
 
     <Button
         android:id="@+id/plus2"
@@ -101,6 +147,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="329dp"
+        android:onClick="plus2"
         android:text="+" />
 
     <Button
@@ -113,6 +160,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
+        android:onClick="minus2"
         android:text="-" />
 
     <ImageButton
@@ -555,43 +603,9 @@
         android:textColor="#FFFFFF"
         android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/minus1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/num1"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/num1"
-        android:layout_toLeftOf="@+id/num1"
-        android:minWidth="40dp"
-        android:minHeight="40dp"
-        android:text="-" />
 
-    <Button
-        android:id="@+id/plus1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="107dp"
-        android:layout_marginRight="107dp"
-        android:layout_marginBottom="456dp"
-        android:text="+" />
 
-    <TextView
-        android:id="@+id/num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/plus1"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/plus1"
-        android:layout_toLeftOf="@+id/plus1"
-        android:text="TextView" />
+
 
 
 </RelativeLayout>

@@ -46,6 +46,7 @@ public class Menu extends AppCompatActivity {
     };
 
     public void openBeef(View v) {
+
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -73,7 +74,49 @@ public class Menu extends AppCompatActivity {
 
 
 
+
+
     }
+    public void ominus1 (View v) {
+        TextView textView = (TextView)findViewById(R.id.num1);
+        location1 = location1 - 1;
+        textView.setText(location1);
+
+
+    }
+
+    public void oplus1(View v){
+        location1 = location1 + 1;
+        TextView textView = (TextView)findViewById(R.id.num1);
+        textView.setText(location1);
+
+
+    }
+    public void ominus2 (View v) {
+
+
+    }
+    public void oplus2(View v){
+
+
+    }
+    public void ominus3 (View v) {
+
+
+    }
+    public void oplus3(View v){
+
+
+    }
+    public void ominus4 (View v) {
+
+
+    }
+    public void oplus4 (View v){
+
+
+    }
+
     public void openPork(View v) {
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
