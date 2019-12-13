@@ -310,6 +310,10 @@ public class Menu extends AppCompatActivity {
         textViewprice4.setText("10 BATH");
     }
 
+    public void openOrder(View v){
+        Intent intent = new Intent(Menu.this, Order.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) //Ad on top
