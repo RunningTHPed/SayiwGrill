@@ -29,11 +29,13 @@ public class Menu extends AppCompatActivity {
     private MySQLConnect mySQLConnect;
     private List<String>items;
     int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
+    int page;
     int brisket,ribeye,chuckeye,wagyu;
     int beacon,porkneck,sirlon,tenderloin;
     int breast,nugget,pepperchiken,firedchiken;
     int squid,dollydish,shrimp,scallops;
-
+    int water,beer,coke,ice;
+    int mushroom,onion,asparagus,babycorn;
 
 
 
@@ -45,8 +47,58 @@ public class Menu extends AppCompatActivity {
             "Bear","Cat"
     };
 
-    public void openBeef(View v) {
 
+
+    public void ADDorder(View v){
+        switch (page) {
+            case 1 :
+                brisket = location1;
+                ribeye = location2;
+                chuckeye = location3;
+                wagyu = location4;
+                break;
+
+            case 2 :
+                beacon = location1;
+                porkneck = location2;
+                sirlon = location3;
+                tenderloin = location4;
+                break;
+            case 3 :
+                breast = location1;
+                nugget = location2;
+                pepperchiken = location3;
+                firedchiken = location4;
+                break;
+            case 4 :
+                squid = location1;
+                dollydish = location2;
+                shrimp = location3;
+                scallops = location4;
+                break;
+            case 5 :
+                water = location1;
+                beer = location2;
+                coke = location3;
+                ice = location4;
+                break;
+            case 6 :
+                mushroom = location1;
+                onion = location2;
+                asparagus = location3;
+                babycorn = location4;
+                break;
+
+
+
+        }
+        location1 = location2 = location3 = location4 = 0;
+
+
+    }
+
+    public void openBeef(View v) {
+        page = 1;
         location1 = location2 = location3 = location4 = 0;
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
@@ -134,6 +186,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openPork(View v) {
+        page = 2;
         location1 = location2 = location3 = location4 = 0;
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
@@ -169,6 +222,7 @@ public class Menu extends AppCompatActivity {
         imageViewpic4.setImageResource(R.drawable.sunin);
     }
     public void openChicken(View v) {
+        page = 3;
         location1 = location2 = location3 = location4 = 0;
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
@@ -204,6 +258,7 @@ public class Menu extends AppCompatActivity {
         imageViewpic4.setImageResource(R.drawable.kaitod);
     }
     public void openSeafood(View v) {
+        page = 4;
         location1 = location2 = location3 = location4 = 0;
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
@@ -240,6 +295,7 @@ public class Menu extends AppCompatActivity {
 
     }
     public void openBeverage(View v) {
+        page = 5;
         location1 = location2 = location3 = location4 = 0;
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
@@ -275,6 +331,7 @@ public class Menu extends AppCompatActivity {
         textViewprice4.setText("10 BATH");
     }
     public void openVegetable(View v) {
+        page = 6;
         location1 = location2 = location3 = location4 = 0;
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
