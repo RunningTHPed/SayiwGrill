@@ -23,11 +23,11 @@ import java.util.List;
 
 public class Menu extends AppCompatActivity {
 
-    private EditText addBox;
+    /*private EditText addBox;
     private Button addButt;
     private ListView dataView;
     private MySQLConnect mySQLConnect;
-    private List<String>items;
+    private List<String>items;*/
     int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
     int page;
     int brisket,ribeye,chuckeye,wagyu;
@@ -36,6 +36,10 @@ public class Menu extends AppCompatActivity {
     int squid,dollydish,shrimp,scallops;
     int water,beer,coke,ice;
     int mushroom,onion,asparagus,babycorn;
+    TextView textView1;
+    TextView textView2;
+    TextView textView3;
+    TextView textView4;
 
 
 
@@ -57,7 +61,6 @@ public class Menu extends AppCompatActivity {
                 chuckeye = location3;
                 wagyu = location4;
                 break;
-
             case 2 :
                 beacon = location1;
                 porkneck = location2;
@@ -88,11 +91,16 @@ public class Menu extends AppCompatActivity {
                 asparagus = location3;
                 babycorn = location4;
                 break;
-
-
-
         }
         location1 = location2 = location3 = location4 = 0;
+        textView1 = (TextView)findViewById(R.id.num1);
+        textView2 = (TextView)findViewById(R.id.num2);
+        textView3 = (TextView)findViewById(R.id.num3);
+        textView4 = (TextView)findViewById(R.id.num4);
+        textView1.setText(""+location1);
+        textView2.setText(""+location2);
+        textView3.setText(""+location3);
+        textView4.setText(""+location4);
 
 
     }
@@ -367,8 +375,24 @@ public class Menu extends AppCompatActivity {
         textViewprice4.setText("10 BATH");
     }
 
+    public void openMenu(View v){
+        //finish();
+        /*Intent intent = new Intent(Menu.this, Menu.class);
+        startActivity(intent);*/
+    }
     public void openOrder(View v){
+        //finish();
         Intent intent = new Intent(Menu.this, Order.class);
+        startActivity(intent);
+    }
+    public void openPromotion(View v){
+        //finish();
+        Intent intent = new Intent(Menu.this, Promotion.class);
+        startActivity(intent);
+    }
+    public void openCheckout(View v){
+        //finish();
+        Intent intent = new Intent(Menu.this, Checkout.class);
         startActivity(intent);
     }
 
@@ -405,7 +429,7 @@ public class Menu extends AppCompatActivity {
 
     }
 
-    public void update(){
+    /*public void update(){
         items = mySQLConnect.getData();
         dataView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items));
     }
@@ -415,5 +439,5 @@ public class Menu extends AppCompatActivity {
         //addButt = (Button)findViewById(R.id.addButt);
         //dataView = (ListView)findViewById(R.id.dataView);
         mySQLConnect = new MySQLConnect(Menu.this);
-    }
+    }*/
 }

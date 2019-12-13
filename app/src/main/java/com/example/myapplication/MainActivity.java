@@ -100,8 +100,8 @@ public class   MainActivity extends AppCompatActivity {
         txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
         TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
         textVideoName.setText("คุณมา "+ number +" คนใช่หรือไม่");
-        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
 
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
         btnFollow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
