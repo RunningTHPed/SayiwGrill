@@ -300,7 +300,7 @@ public class Menu extends AppCompatActivity {
         imageViewpic2.setImageResource(R.drawable.onion);
         imageViewpic3.setImageResource(R.drawable.aspalagas);
         imageViewpic4.setImageResource(R.drawable.babycorn);
-        textViewfood1.setText("Eringii ");
+        textViewfood1.setText("Enokitake");
         textViewfood2.setText("Onion");
         textViewfood3.setText("Asparagus");
         textViewfood4.setText("Baby Corn");
