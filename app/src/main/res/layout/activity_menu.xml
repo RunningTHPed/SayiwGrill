@@ -295,6 +295,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="195dp"
         android:layout_marginEnd="760dp"
+        android:src="@drawable/brisket"
         android:layout_marginRight="760dp"></ImageView>
 
     <ImageView
@@ -306,6 +307,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="760dp"
+        android:src="@drawable/ribeye"
         android:layout_marginRight="760dp"></ImageView>
 
     <ImageView
@@ -317,6 +319,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="760dp"
+        android:src="@drawable/shuckeye"
         android:layout_marginRight="760dp"></ImageView>
 
     <ImageView
@@ -329,6 +332,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="760dp"
         android:layout_marginRight="760dp"
+        android:src="@drawable/vagil"
         ></ImageView>
 
     <TextView
