@@ -37,17 +37,7 @@
         android:onClick="oplus1"
         android:text="+" />
 
-    <TextView
-        android:id="@+id/num1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/plus1"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
-        android:layout_toStartOf="@+id/plus1"
-        android:layout_toLeftOf="@+id/plus1"
-        android:text="0" />
+
 
     <TextView
         android:id="@+id/num4"
@@ -59,9 +49,6 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-254dp"
-
-        android:text="0"
-
         android:textAlignment="center"
         android:text="5"
         android:textColor="#FFFFFF"
@@ -104,9 +91,6 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-127dp"
-
-        android:text="0"
-
         android:textAlignment="center"
         android:text="5"
         android:textColor="#FFFFFF"
@@ -149,9 +133,6 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-
-        android:text="0" 
-
         android:textAlignment="center"
         android:text="5"
         android:textColor="#FFFFFF"
@@ -168,7 +149,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="329dp"
-        android:onClick="plus2"
+        android:onClick="oplus2"
         android:text="+" />
 
     <Button
@@ -181,7 +162,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
-        android:onClick="minus2"
+        android:onClick="ominus2"
         android:text="-" />
 
     <ImageButton
@@ -625,10 +606,6 @@
         android:textSize="30dp" />
 
 
-
-<<<<<<< HEAD
-
-=======
     <TextView
         android:id="@+id/num1"
         android:layout_width="40dp"
@@ -643,7 +620,7 @@
         android:text="5"
         android:textColor="#FFFFFF"
         android:textSize="36sp" />
->>>>>>> 56c9ba802bfc1a7d516263d48a98118fbabbadcb
+
 
 
 </RelativeLayout>

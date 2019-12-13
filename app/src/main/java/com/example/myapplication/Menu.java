@@ -76,11 +76,13 @@ public class Menu extends AppCompatActivity {
 
 
 
+
     }
     public void ominus1 (View v) {
-        TextView textView = (TextView)findViewById(R.id.num1);
-        location1 = location1 - 1;
-        textView.setText(location1);
+        TextView textViewnum1 = (TextView)findViewById(R.id.num1);
+        if(location1 != 0)
+            location1 = location1 - 1;
+        textViewnum1.setText(""+location1);
 
 
     }
@@ -88,7 +90,7 @@ public class Menu extends AppCompatActivity {
     public void oplus1(View v){
         location1 = location1 + 1;
         TextView textView = (TextView)findViewById(R.id.num1);
-        textView.setText(location1);
+        textView.setText(""+location1);
 
 
     }
