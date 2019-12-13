@@ -23,7 +23,10 @@
         android:onClick="ominus1"
         android:text="-"
         android:background="@drawable/buttondesign"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
     <Button
         android:id="@+id/plus1"
         android:layout_width="40dp"
@@ -35,7 +38,11 @@
         android:layout_marginRight="107dp"
         android:layout_marginBottom="456dp"
         android:onClick="oplus1"
-        android:text="+" />
+        android:text="+"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
 
 
@@ -66,7 +73,11 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="75dp"
         android:onClick="oplus4"
-        android:text="+" />
+        android:text="+"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/minus4"
@@ -79,7 +90,11 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-254dp"
         android:onClick="ominus4"
-        android:text="-" />
+        android:text="-"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/num3"
@@ -108,7 +123,11 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="-127dp"
         android:onClick="ominus3"
-        android:text="-" />
+        android:text="-"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/plus3"
@@ -121,7 +140,11 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="203dp"
         android:onClick="oplus3"
-        android:text="+" />
+        android:text="+"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
     <TextView
         android:id="@+id/num2"
@@ -150,7 +173,11 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="329dp"
         android:onClick="oplus2"
-        android:text="+" />
+        android:text="+"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
     <Button
         android:id="@+id/minus2"
@@ -163,7 +190,11 @@
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
         android:onClick="ominus2"
-        android:text="-" />
+        android:text="-"
+        android:background="@drawable/buttondesign"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
 
     <ImageButton
         android:id="@+id/imgbutton1"
