@@ -8,21 +8,19 @@
     tools:context=".Menu">
 
 
-
-
     <Button
         android:id="@+id/minus1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@+id/num1"
+        android:layout_alignBottom="@+id/plus1"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="0dp"
         android:layout_toStartOf="@+id/num1"
         android:layout_toLeftOf="@+id/num1"
-        android:onClick="ominus1"
         android:minWidth="40dp"
         android:minHeight="40dp"
+        android:onClick="ominus1"
         android:text="-" />
     <Button
         android:id="@+id/plus1"
@@ -132,7 +130,7 @@
         android:layout_alignBottom="@+id/plus2"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="5dp"
         android:textAlignment="center"
         android:text="0"
         android:textColor="#FFFFFF"
@@ -613,7 +611,7 @@
         android:layout_alignBottom="@+id/plus1"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginBottom="5dp"
         android:layout_toStartOf="@+id/plus1"
         android:layout_toLeftOf="@+id/plus1"
         android:textAlignment="center"
