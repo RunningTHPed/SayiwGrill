@@ -16,12 +16,14 @@ public class Promotion extends AppCompatActivity {
     int squid,dollyfish,shrimp,scallops;
     int water,beer,coke,ice;
     int mushroom,onion,asparagus,babycorn;
+    int price = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_promotion);
         Bundle bundle = getIntent().getExtras();
+        price = bundle.getInt("price");
         page = bundle.getInt("page");
         activity = bundle.getInt("activity");
         brisket = bundle.getInt("brisket");
@@ -54,6 +56,7 @@ public class Promotion extends AppCompatActivity {
     public void openOrder(View v){
         finish();
         Intent intent = new Intent(Promotion.this, Order.class);
+        intent.putExtra("price", price);
         intent.putExtra("page", activity);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
@@ -93,6 +96,7 @@ public class Promotion extends AppCompatActivity {
     public void openCheckout(View v){
         finish();
         Intent intent = new Intent(Promotion.this, Checkout.class);
+        intent.putExtra("price", price);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
         intent.putExtra("brisket", brisket);

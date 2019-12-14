@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -29,6 +30,7 @@ public class Menu extends AppCompatActivity {
     private MySQLConnect mySQLConnect;
     private List<String>items;*/
     int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
+    int price = 0;
     int page=1;
     int brisket= 0,ribeye=0,chuckeye=0,wagyu=0;
     int beacon=0,porkneck=0,sirlon=0,tenderloin=0;
@@ -105,6 +107,12 @@ public class Menu extends AppCompatActivity {
                 location1 = location2 = location3 = location4 = 0;
                 break;
         }
+        price += brisket*69 + ribeye*69 + chuckeye*69 + wagyu*199 +
+                beacon*20 + porkneck*30 + sirlon*30 + tenderloin*30+
+                breast*20 + nugget*20 + pepperchiken*20 + firedchiken*20+
+                squid*30+dollyfish*30+shrimp*30+scallops*30+
+                water*10+beer*50+coke*20+ice*20;
+
         //Intent intent = new Intent(Menu.this, Menu.class);
         //intent.putExtra("page", page);
 
@@ -401,6 +409,7 @@ public class Menu extends AppCompatActivity {
     public void openOrder(View v){
         //finish();
         Intent intent = new Intent(Menu.this, Order.class);
+        intent.putExtra("price", price);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
         intent.putExtra("brisket", brisket);
@@ -438,6 +447,7 @@ public class Menu extends AppCompatActivity {
     public void openPromotion(View v){
         //finish();
         Intent intent = new Intent(Menu.this, Promotion.class);
+        intent.putExtra("price", price);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
         intent.putExtra("brisket", brisket);
@@ -471,6 +481,7 @@ public class Menu extends AppCompatActivity {
     public void openCheckout(View v){
         //finish();
         Intent intent = new Intent(Menu.this, Checkout.class);
+        intent.putExtra("price", price);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
         intent.putExtra("brisket", brisket);

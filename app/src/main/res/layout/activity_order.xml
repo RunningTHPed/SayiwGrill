@@ -101,17 +101,17 @@
 
     <Button
         android:id="@+id/pressOrder"
-        android:onClick="PressOrder"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/buttondesign2"
-        android:text="press to Order"
+        android:onClick="PressOrder"
+        android:text="CHECKOUT"
         android:textColor="#FFFFFF"
         android:textSize="18dp" />
 
