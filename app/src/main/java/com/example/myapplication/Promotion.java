@@ -73,7 +73,7 @@ public class Promotion extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish",dollyfish);
+        intent.putExtra("dollyfish",dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);
@@ -112,7 +112,7 @@ public class Promotion extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("dollyfish", dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);

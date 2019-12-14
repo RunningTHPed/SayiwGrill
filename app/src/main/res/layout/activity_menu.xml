@@ -451,7 +451,7 @@
         android:layout_marginRight="50dp"
         android:layout_toStartOf="@+id/buttonPromotion"
         android:layout_toLeftOf="@+id/buttonPromotion"
-        android:background="@drawable/buttondesign"
+        android:background="@drawable/buttondesign2"
         android:text="Menu"
         android:textColor="#FFFFFF"
         android:textSize="30sp" />

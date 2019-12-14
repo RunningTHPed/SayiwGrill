@@ -2,14 +2,18 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -29,6 +33,7 @@ public class Menu extends AppCompatActivity {
     private ListView dataView;
     private MySQLConnect mySQLConnect;
     private List<String>items;*/
+    Dialog myDialog;
     int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
     int price = 0;
     int page=1;
@@ -63,76 +68,122 @@ public class Menu extends AppCompatActivity {
 
 
     public void ADDorder(View v){
-        switch (page) {
-            case 1 :
-                brisket += location1;
-                ribeye += location2 ;
-                chuckeye += location3  ;
-                wagyu += location4  ;
-                location1 = location2 = location3 = location4 = 0;
-                break;
-            case 2 :
-                beacon += location1;
-                porkneck += location2;
-                sirlon += location3;
-                tenderloin += location4;
-                location1 = location2 = location3 = location4 = 0;
-                break;
-            case 3 :
-                breast += location1;
-                nugget += location2;
-                pepperchiken += location3;
-                firedchiken += location4;
-                location1 = location2 = location3 = location4 = 0;
-                break;
-            case 4 :
-                squid += location1;
-                dollyfish += location2;
-                shrimp += location3;
-                scallops += location4;
-                location1 = location2 = location3 = location4 = 0;
-                break;
-            case 5 :
-                water += location1;
-                beer += location2;
-                coke += location3;
-                ice += location4;
-                location1 = location2 = location3 = location4 = 0;
-                break;
-            case 6 :
-                mushroom += location1;
-                onion += location2;
-                asparagus += location3;
-                babycorn += location4;
-                location1 = location2 = location3 = location4 = 0;
-                break;
-        }
-        price += brisket*69 + ribeye*69 + chuckeye*69 + wagyu*199 +
-                beacon*20 + porkneck*30 + sirlon*30 + tenderloin*30+
-                breast*20 + nugget*20 + pepperchiken*20 + firedchiken*20+
-                squid*30+dollyfish*30+shrimp*30+scallops*30+
-                water*10+beer*50+coke*20+ice*20;
-
-        //Intent intent = new Intent(Menu.this, Menu.class);
-        //intent.putExtra("page", page);
-
-
-        textView1 = (TextView)findViewById(R.id.num1);
-        textView2 = (TextView)findViewById(R.id.num2);
-        textView3 = (TextView)findViewById(R.id.num3);
-        textView4 = (TextView)findViewById(R.id.num4);
-        textView1.setText(""+location1);
-        textView2.setText(""+location2);
-        textView3.setText(""+location3);
-        textView4.setText(""+location4);
+        ShowPopup();
 
 
 
+
+    }
+    public void ShowPopup() { //แสดง popup ถาม
+        TextView txtclose,btnFollow;
+        myDialog.setContentView(R.layout.custompopup);
+        txtclose = (TextView) myDialog.findViewById(R.id.txtclose);
+        TextView textVideoName = myDialog.findViewById(R.id.textVideoName);
+        textVideoName.setTextSize(32);
+        textVideoName.setText("Comfirm Your Order?");
+        btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+        btnFollow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (page) {
+                    case 1 :
+                        brisket += location1;
+                        ribeye += location2 ;
+                        chuckeye += location3  ;
+                        wagyu += location4  ;
+                        location1 = location2 = location3 = location4 = 0;
+                        break;
+                    case 2 :
+                        beacon += location1;
+                        porkneck += location2;
+                        sirlon += location3;
+                        tenderloin += location4;
+                        location1 = location2 = location3 = location4 = 0;
+                        break;
+                    case 3 :
+                        breast += location1;
+                        nugget += location2;
+                        pepperchiken += location3;
+                        firedchiken += location4;
+                        location1 = location2 = location3 = location4 = 0;
+                        break;
+                    case 4 :
+                        squid += location1;
+                        dollyfish += location2;
+                        shrimp += location3;
+                        scallops += location4;
+                        location1 = location2 = location3 = location4 = 0;
+                        break;
+                    case 5 :
+                        water += location1;
+                        beer += location2;
+                        coke += location3;
+                        ice += location4;
+                        location1 = location2 = location3 = location4 = 0;
+                        break;
+                    case 6 :
+                        mushroom += location1;
+                        onion += location2;
+                        asparagus += location3;
+                        babycorn += location4;
+                        location1 = location2 = location3 = location4 = 0;
+                        break;
+                }
+                price = brisket*69 + ribeye*69 + chuckeye*69 + wagyu*199 +
+                        beacon*20 + porkneck*30 + sirlon*30 + tenderloin*30+
+                        breast*20 + nugget*20 + pepperchiken*20 + firedchiken*20+
+                        squid*30+dollyfish*30+shrimp*30+scallops*30+
+                        water*10+beer*50+coke*20+ice*20+
+                        mushroom*10+onion*20+asparagus*10+beacon*10;
+
+                //Intent intent = new Intent(Menu.this, Menu.class);
+                //intent.putExtra("page", page);
+
+
+                textView1 = (TextView)findViewById(R.id.num1);
+                textView2 = (TextView)findViewById(R.id.num2);
+                textView3 = (TextView)findViewById(R.id.num3);
+                textView4 = (TextView)findViewById(R.id.num4);
+                textView1.setText(""+location1);
+                textView2.setText(""+location2);
+                textView3.setText(""+location3);
+                textView4.setText(""+location4);
+                myDialog.dismiss();
+
+            }
+        });
+        txtclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.dismiss();
+            }
+        });
+
+        myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        myDialog.show();
     }
 
     public void openBeef(View v) {
         page = 1;
         location1 = location2 = location3 = location4 = 0;
+        ImageButton btnbeef = (ImageButton) findViewById(R.id.imgbutton1);
+        ImageButton btnpork = (ImageButton) findViewById(R.id.imgbutton2);
+        ImageButton btnchiken = (ImageButton) findViewById(R.id.imgbutton3);
+        ImageButton btnseafood = (ImageButton) findViewById(R.id.imgbutton4);
+        ImageButton btndrink = (ImageButton) findViewById(R.id.imgbutton5);
+        ImageButton btnveget = (ImageButton) findViewById(R.id.imgbutton6);
+
+        btnbeef.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign2));
+        btnpork.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnchiken.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnseafood.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btndrink.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnveget.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+
+
+
+
+
         ImageView imageViewpic1=(ImageView)findViewById(R.id.pic1);
         ImageView imageViewpic2=(ImageView)findViewById(R.id.pic2);
         ImageView imageViewpic3=(ImageView)findViewById(R.id.pic3);
@@ -221,6 +272,19 @@ public class Menu extends AppCompatActivity {
     public void openPork(View v) {
         page = 2;
         location1 = location2 = location3 = location4 = 0;
+        ImageButton btnbeef = (ImageButton) findViewById(R.id.imgbutton1);
+        ImageButton btnpork = (ImageButton) findViewById(R.id.imgbutton2);
+        ImageButton btnchiken = (ImageButton) findViewById(R.id.imgbutton3);
+        ImageButton btnseafood = (ImageButton) findViewById(R.id.imgbutton4);
+        ImageButton btndrink = (ImageButton) findViewById(R.id.imgbutton5);
+        ImageButton btnveget = (ImageButton) findViewById(R.id.imgbutton6);
+
+        btnbeef.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnpork.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign2));
+        btnchiken.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnseafood.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btndrink.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnveget.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
         TextView textView3 = (TextView)findViewById(R.id.num3);
@@ -257,6 +321,19 @@ public class Menu extends AppCompatActivity {
     public void openChicken(View v) {
         page = 3;
         location1 = location2 = location3 = location4 = 0;
+        ImageButton btnbeef = (ImageButton) findViewById(R.id.imgbutton1);
+        ImageButton btnpork = (ImageButton) findViewById(R.id.imgbutton2);
+        ImageButton btnchiken = (ImageButton) findViewById(R.id.imgbutton3);
+        ImageButton btnseafood = (ImageButton) findViewById(R.id.imgbutton4);
+        ImageButton btndrink = (ImageButton) findViewById(R.id.imgbutton5);
+        ImageButton btnveget = (ImageButton) findViewById(R.id.imgbutton6);
+
+        btnbeef.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnpork.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnchiken.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign2));
+        btnseafood.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btndrink.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnveget.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
         TextView textView3 = (TextView)findViewById(R.id.num3);
@@ -293,6 +370,19 @@ public class Menu extends AppCompatActivity {
     public void openSeafood(View v) {
         page = 4;
         location1 = location2 = location3 = location4 = 0;
+        ImageButton btnbeef = (ImageButton) findViewById(R.id.imgbutton1);
+        ImageButton btnpork = (ImageButton) findViewById(R.id.imgbutton2);
+        ImageButton btnchiken = (ImageButton) findViewById(R.id.imgbutton3);
+        ImageButton btnseafood = (ImageButton) findViewById(R.id.imgbutton4);
+        ImageButton btndrink = (ImageButton) findViewById(R.id.imgbutton5);
+        ImageButton btnveget = (ImageButton) findViewById(R.id.imgbutton6);
+
+        btnbeef.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnpork.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnchiken.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnseafood.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign2));
+        btndrink.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnveget.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
         TextView textView3 = (TextView)findViewById(R.id.num3);
@@ -330,6 +420,20 @@ public class Menu extends AppCompatActivity {
     public void openBeverage(View v) {
         page = 5;
         location1 = location2 = location3 = location4 = 0;
+        ImageButton btnbeef = (ImageButton) findViewById(R.id.imgbutton1);
+        ImageButton btnpork = (ImageButton) findViewById(R.id.imgbutton2);
+        ImageButton btnchiken = (ImageButton) findViewById(R.id.imgbutton3);
+        ImageButton btnseafood = (ImageButton) findViewById(R.id.imgbutton4);
+        ImageButton btndrink = (ImageButton) findViewById(R.id.imgbutton5);
+        ImageButton btnveget = (ImageButton) findViewById(R.id.imgbutton6);
+
+        btnbeef.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnpork.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnchiken.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnseafood.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btndrink.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign2));
+        btnveget.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
         TextView textView3 = (TextView)findViewById(R.id.num3);
@@ -366,6 +470,19 @@ public class Menu extends AppCompatActivity {
     public void openVegetable(View v) {
         page = 6;
         location1 = location2 = location3 = location4 = 0;
+        ImageButton btnbeef = (ImageButton) findViewById(R.id.imgbutton1);
+        ImageButton btnpork = (ImageButton) findViewById(R.id.imgbutton2);
+        ImageButton btnchiken = (ImageButton) findViewById(R.id.imgbutton3);
+        ImageButton btnseafood = (ImageButton) findViewById(R.id.imgbutton4);
+        ImageButton btndrink = (ImageButton) findViewById(R.id.imgbutton5);
+        ImageButton btnveget = (ImageButton) findViewById(R.id.imgbutton6);
+
+        btnbeef.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnpork.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnchiken.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnseafood.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btndrink.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign));
+        btnveget.setBackgroundDrawable(getResources().getDrawable(R.drawable.buttondesign2));
         TextView textView1 = (TextView)findViewById(R.id.num1);
         TextView textView2 = (TextView)findViewById(R.id.num2);
         TextView textView3 = (TextView)findViewById(R.id.num3);
@@ -400,14 +517,15 @@ public class Menu extends AppCompatActivity {
         textViewprice4.setText("10 BATH");
     }
 
-    public void openMenu(View v){
 
 
-        overridePendingTransition(0,0);
-    }
 
     public void openOrder(View v){
         //finish();
+
+
+
+
         Intent intent = new Intent(Menu.this, Order.class);
         intent.putExtra("price", price);
         intent.putExtra("activity", activity);
@@ -425,7 +543,7 @@ public class Menu extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("dollyfish", dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);
@@ -444,8 +562,14 @@ public class Menu extends AppCompatActivity {
         overridePendingTransition(0,0);
 
     }
+    public void openMenu(View v){
+
+
+        overridePendingTransition(0,0);
+    }
     public void openPromotion(View v){
         //finish();
+
         Intent intent = new Intent(Menu.this, Promotion.class);
         intent.putExtra("price", price);
         intent.putExtra("activity", activity);
@@ -463,7 +587,7 @@ public class Menu extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("dollyfish", dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);
@@ -474,7 +598,7 @@ public class Menu extends AppCompatActivity {
         intent.putExtra("onion", onion);
         intent.putExtra("asparagus", asparagus);
         intent.putExtra("babycorn", babycorn);
-
+        //intent.addFlags(65536);
         startActivity(intent);
         overridePendingTransition(0,0);
     }
@@ -497,7 +621,7 @@ public class Menu extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("dollyfish", dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);
@@ -519,6 +643,7 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
          this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE); // LANDSCAPE ONLY
+         myDialog = new Dialog(this);
 
             /*CarouselView carouselView = findViewById(R.id.carousel);
             carouselView.setPageCount(mImages.length);

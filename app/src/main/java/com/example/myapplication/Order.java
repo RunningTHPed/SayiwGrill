@@ -74,6 +74,8 @@ public class Order extends AppCompatActivity {
         count[21] = onion = bundle.getInt("onion");
         count[22] = asparagus = bundle.getInt("asparagus");
         count[23] = babycorn = bundle.getInt("babycorn");
+        TextView textView3 = (TextView)findViewById(R.id.allprice);
+        textView3.setText(""+price);
         test=0;
         for(int j=0;j<24;j++){
             if(count[j]!=0){
@@ -109,6 +111,7 @@ public class Order extends AppCompatActivity {
             TextView textView2= (TextView)view.findViewById(R.id.textView_count);
             ImageView imageView= (ImageView)view.findViewById(R.id.imageView_foodpic);
             imageView.setImageResource(Image1[i]);
+
             textView1.setText(namefood1[i]);
             textView2.setText("" + count1[i]);
             return view;
@@ -145,7 +148,7 @@ public class Order extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("dollyfish", dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);
@@ -179,7 +182,7 @@ public class Order extends AppCompatActivity {
         intent.putExtra("pepperchiken", pepperchiken);
         intent.putExtra("firedchiken", firedchiken);
         intent.putExtra("squid", squid);
-        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("dollyfish", dollyfish);
         intent.putExtra("shrimp", shrimp);
         intent.putExtra("scallops", scallops);
         intent.putExtra("water", water);
