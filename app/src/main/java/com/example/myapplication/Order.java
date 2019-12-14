@@ -189,4 +189,8 @@ public class Order extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(0,0);
     }
+
+    public void PressOrder(View v){
+
+    }
 }
