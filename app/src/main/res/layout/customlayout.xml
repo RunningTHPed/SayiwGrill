@@ -14,7 +14,6 @@
         android:layout_marginStart="96dp"
         android:layout_marginLeft="96dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/a5"
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
@@ -27,7 +26,7 @@
         android:layout_marginStart="412dp"
         android:layout_marginLeft="412dp"
         android:layout_marginTop="58dp"
-        android:text="TEST"
+        android:text=""
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +44,7 @@
         android:layout_marginStart="670dp"
         android:layout_marginLeft="670dp"
         android:layout_marginTop="58dp"
-        android:text="TextView"
+        android:text=""
         android:textColor="#FFFFFF"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"

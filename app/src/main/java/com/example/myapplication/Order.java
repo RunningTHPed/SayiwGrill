@@ -30,7 +30,9 @@ public class Order extends AppCompatActivity {
     String[] namefood = {"brisket","ribeye","chuckeye","wagyu","beacon","porkneck","sirlon","tenderloin","breast","nugget","pepperchiken","firedchiken","squid","dollydish","shrimp","scallops","water","beer","coke","ice","mushroom","onion","asparagus","babycorn"};
     int[] count = new int[24];
     int [] Image = {R.drawable.brisket,R.drawable.ribeye,R.drawable.shuckeye,R.drawable.vagil,R.drawable.becon,R.drawable.sunneck,R.drawable.sunout,R.drawable.sunin,R.drawable.breast,R.drawable.nugget,R.drawable.blackpepper,R.drawable.kaitod,R.drawable.squid,R.drawable.dolly,R.drawable.shrimp,R.drawable.scallobs,R.drawable.water,R.drawable.beer,R.drawable.coke,R.drawable.ice,R.drawable.mushroom,R.drawable.onion,R.drawable.aspalagas,R.drawable.babycorn};
-
+    int[] count1 = new int[24] ;
+    int[] Image1 = new int[24] ;
+    String[] namefood1 = new String[24] ;
 
 
     @Override
@@ -70,8 +72,15 @@ public class Order extends AppCompatActivity {
         count[21] = onion = bundle.getInt("onion");
         count[22] = asparagus = bundle.getInt("asparagus");
         count[23] = babycorn = bundle.getInt("babycorn");
-
-
+        test=0;
+        for(int j=0;j<24;j++){
+            if(count[j]!=0){
+                count1[test]=count[j];
+                Image1[test]=Image[j];
+                namefood1[test]=namefood[j];
+                test++;
+            }
+        }
 
     }
 
@@ -81,7 +90,7 @@ public class Order extends AppCompatActivity {
     class CustomAdapter extends BaseAdapter{
         @Override
         public int getCount(){
-            return namefood.length;
+            return test;
         }
         @Override
         public Object getItem(int i){
@@ -97,13 +106,11 @@ public class Order extends AppCompatActivity {
             TextView textView1= (TextView)view.findViewById(R.id.textview_foodname);
             TextView textView2= (TextView)view.findViewById(R.id.textView_count);
             ImageView imageView= (ImageView)view.findViewById(R.id.imageView_foodpic);
-
-            imageView.setImageResource(Image[i]);
-            textView1.setText(namefood[i]);
-            textView2.setText(""+count[i]);
-
-
+            imageView.setImageResource(Image1[i]);
+            textView1.setText(namefood1[i]);
+            textView2.setText("" + count1[i]);
             return view;
+
         }
 
 

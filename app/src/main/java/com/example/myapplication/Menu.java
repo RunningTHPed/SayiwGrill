@@ -67,43 +67,49 @@ public class Menu extends AppCompatActivity {
                 ribeye1 = location2;
                 chuckeye1 = location3;
                 wagyu1 = location4;
+                location1 = location2 = location3 = location4 = 0;
                 break;
             case 2 :
                 beacon1 = location1;
                 porkneck1 = location2;
                 sirlon1 = location3;
                 tenderloin1 = location4;
+                location1 = location2 = location3 = location4 = 0;
                 break;
             case 3 :
                 breast1 = location1;
                 nugget1 = location2;
                 pepperchiken1 = location3;
                 firedchiken1 = location4;
+                location1 = location2 = location3 = location4 = 0;
                 break;
             case 4 :
                 squid1 = location1;
                 dollyfish1 = location2;
                 shrimp1 = location3;
                 scallops1 = location4;
+                location1 = location2 = location3 = location4 = 0;
                 break;
             case 5 :
                 water1 = location1;
                 beer1 = location2;
                 coke1 = location3;
                 ice1 = location4;
+                location1 = location2 = location3 = location4 = 0;
                 break;
             case 6 :
                 mushroom1 = location1;
                 onion1 = location2;
                 asparagus1 = location3;
                 babycorn1 = location4;
+                location1 = location2 = location3 = location4 = 0;
                 break;
         }
         //Intent intent = new Intent(Menu.this, Menu.class);
         //intent.putExtra("page", page);
-        brisket = brisket + brisket1;
-        ribeye = ribeye + ribeye1 ;
-        chuckeye = chuckeye +chuckeye1  ;
+        brisket += brisket1;
+        ribeye += ribeye1 ;
+        chuckeye += chuckeye1  ;
         wagyu += wagyu1  ;
         beacon+=beacon1  ;
         porkneck+=porkneck1  ;
@@ -127,7 +133,7 @@ public class Menu extends AppCompatActivity {
         babycorn+=babycorn1  ;
 
 
-        location1 = location2 = location3 = location4 = 0;
+
         textView1 = (TextView)findViewById(R.id.num1);
         textView2 = (TextView)findViewById(R.id.num2);
         textView3 = (TextView)findViewById(R.id.num3);
