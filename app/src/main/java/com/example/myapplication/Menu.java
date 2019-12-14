@@ -29,13 +29,20 @@ public class Menu extends AppCompatActivity {
     private MySQLConnect mySQLConnect;
     private List<String>items;*/
     int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
-    int page;
-    int brisket,ribeye,chuckeye,wagyu;
-    int beacon,porkneck,sirlon,tenderloin;
-    int breast,nugget,pepperchiken,firedchiken;
-    int squid,dollydish,shrimp,scallops;
-    int water,beer,coke,ice;
-    int mushroom,onion,asparagus,babycorn;
+    int page=1;
+    int brisket= 0,ribeye=0,chuckeye=0,wagyu=0;
+    int beacon=0,porkneck=0,sirlon=0,tenderloin=0;
+    int breast=0,nugget=0,pepperchiken=0,firedchiken=0;
+    int squid=0,dollyfish=0,shrimp=0,scallops=0;
+    int water=0,beer=0,coke=0,ice=0;
+    int mushroom=0,onion=0,asparagus=0,babycorn=0;
+    int brisket1= 0,ribeye1=0,chuckeye1=0,wagyu1=0;
+    int beacon1=0,porkneck1=0,sirlon1=0,tenderloin1=0;
+    int breast1=0,nugget1=0,pepperchiken1=0,firedchiken1=0;
+    int squid1=0,dollyfish1=0,shrimp1=0,scallops1=0;
+    int water1=0,beer1=0,coke1=0,ice1=0;
+    int mushroom1=0,onion1=0,asparagus1=0,babycorn1=0;
+    int activity = 1;
     TextView textView1;
     TextView textView2;
     TextView textView3;
@@ -56,42 +63,70 @@ public class Menu extends AppCompatActivity {
     public void ADDorder(View v){
         switch (page) {
             case 1 :
-                brisket = location1;
-                ribeye = location2;
-                chuckeye = location3;
-                wagyu = location4;
+                brisket1 = location1;
+                ribeye1 = location2;
+                chuckeye1 = location3;
+                wagyu1 = location4;
                 break;
             case 2 :
-                beacon = location1;
-                porkneck = location2;
-                sirlon = location3;
-                tenderloin = location4;
+                beacon1 = location1;
+                porkneck1 = location2;
+                sirlon1 = location3;
+                tenderloin1 = location4;
                 break;
             case 3 :
-                breast = location1;
-                nugget = location2;
-                pepperchiken = location3;
-                firedchiken = location4;
+                breast1 = location1;
+                nugget1 = location2;
+                pepperchiken1 = location3;
+                firedchiken1 = location4;
                 break;
             case 4 :
-                squid = location1;
-                dollydish = location2;
-                shrimp = location3;
-                scallops = location4;
+                squid1 = location1;
+                dollyfish1 = location2;
+                shrimp1 = location3;
+                scallops1 = location4;
                 break;
             case 5 :
-                water = location1;
-                beer = location2;
-                coke = location3;
-                ice = location4;
+                water1 = location1;
+                beer1 = location2;
+                coke1 = location3;
+                ice1 = location4;
                 break;
             case 6 :
-                mushroom = location1;
-                onion = location2;
-                asparagus = location3;
-                babycorn = location4;
+                mushroom1 = location1;
+                onion1 = location2;
+                asparagus1 = location3;
+                babycorn1 = location4;
                 break;
         }
+        //Intent intent = new Intent(Menu.this, Menu.class);
+        //intent.putExtra("page", page);
+        brisket = brisket + brisket1;
+        ribeye = ribeye + ribeye1 ;
+        chuckeye = chuckeye +chuckeye1  ;
+        wagyu += wagyu1  ;
+        beacon+=beacon1  ;
+        porkneck+=porkneck1  ;
+        sirlon+=sirlon1  ;
+        tenderloin+=tenderloin1  ;
+        brisket+=breast1  ;
+        nugget+=nugget1 ;
+        pepperchiken+=pepperchiken1  ;
+        firedchiken+=firedchiken1  ;
+        squid+=squid1  ;
+        dollyfish+=dollyfish1  ;
+        shrimp+=shrimp1  ;
+        scallops+=scallops1  ;
+        water+=water1  ;
+        beer+=beer1  ;
+        coke+=coke1  ;
+        ice+=ice1  ;
+        mushroom+=mushroom1  ;
+        onion+=onion1  ;
+        asparagus+=asparagus1  ;
+        babycorn+=babycorn1  ;
+
+
         location1 = location2 = location3 = location4 = 0;
         textView1 = (TextView)findViewById(R.id.num1);
         textView2 = (TextView)findViewById(R.id.num2);
@@ -101,6 +136,7 @@ public class Menu extends AppCompatActivity {
         textView2.setText(""+location2);
         textView3.setText(""+location3);
         textView4.setText(""+location4);
+
 
 
     }
@@ -376,24 +412,113 @@ public class Menu extends AppCompatActivity {
     }
 
     public void openMenu(View v){
-        //finish();
-        /*Intent intent = new Intent(Menu.this, Menu.class);
-        startActivity(intent);*/
+
+
+        overridePendingTransition(0,0);
     }
+
     public void openOrder(View v){
         //finish();
         Intent intent = new Intent(Menu.this, Order.class);
+        intent.putExtra("activity", activity);
+        intent.putExtra("page", page);
+        intent.putExtra("brisket", brisket);
+        intent.putExtra("ribeye", ribeye);
+        intent.putExtra("chuckeye", chuckeye);
+        intent.putExtra("wagyu", wagyu);
+        intent.putExtra("beacon", beacon);
+        intent.putExtra("porkneck", porkneck);
+        intent.putExtra("sirlon", sirlon);
+        intent.putExtra("tenderloin", tenderloin);
+        intent.putExtra("breast", breast);
+        intent.putExtra("nugget", nugget);
+        intent.putExtra("pepperchiken", pepperchiken);
+        intent.putExtra("firedchiken", firedchiken);
+        intent.putExtra("squid", squid);
+        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("shrimp", shrimp);
+        intent.putExtra("scallops", scallops);
+        intent.putExtra("water", water);
+        intent.putExtra("beer", beer);
+        intent.putExtra("coke", coke);
+        intent.putExtra("ice", ice);
+        intent.putExtra("mushroom", mushroom);
+        intent.putExtra("onion", onion);
+        intent.putExtra("asparagus", asparagus);
+        intent.putExtra("babycorn", babycorn);
+
         startActivity(intent);
+
+
+
+        overridePendingTransition(0,0);
+
     }
     public void openPromotion(View v){
         //finish();
         Intent intent = new Intent(Menu.this, Promotion.class);
+        intent.putExtra("activity", activity);
+        intent.putExtra("page", page);
+        intent.putExtra("brisket", brisket);
+        intent.putExtra("ribeye", ribeye);
+        intent.putExtra("chuckeye", chuckeye);
+        intent.putExtra("wagyu", wagyu);
+        intent.putExtra("beacon", beacon);
+        intent.putExtra("porkneck", porkneck);
+        intent.putExtra("sirlon", sirlon);
+        intent.putExtra("tenderloin", tenderloin);
+        intent.putExtra("breast", breast);
+        intent.putExtra("nugget", nugget);
+        intent.putExtra("pepperchiken", pepperchiken);
+        intent.putExtra("firedchiken", firedchiken);
+        intent.putExtra("squid", squid);
+        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("shrimp", shrimp);
+        intent.putExtra("scallops", scallops);
+        intent.putExtra("water", water);
+        intent.putExtra("beer", beer);
+        intent.putExtra("coke", coke);
+        intent.putExtra("ice", ice);
+        intent.putExtra("mushroom", mushroom);
+        intent.putExtra("onion", onion);
+        intent.putExtra("asparagus", asparagus);
+        intent.putExtra("babycorn", babycorn);
+
         startActivity(intent);
+        overridePendingTransition(0,0);
     }
     public void openCheckout(View v){
         //finish();
         Intent intent = new Intent(Menu.this, Checkout.class);
+        intent.putExtra("activity", activity);
+        intent.putExtra("page", page);
+        intent.putExtra("brisket", brisket);
+        intent.putExtra("ribeye", ribeye);
+        intent.putExtra("chuckeye", chuckeye);
+        intent.putExtra("wagyu", wagyu);
+        intent.putExtra("beacon", beacon);
+        intent.putExtra("porkneck", porkneck);
+        intent.putExtra("sirlon", sirlon);
+        intent.putExtra("tenderloin", tenderloin);
+        intent.putExtra("breast", breast);
+        intent.putExtra("nugget", nugget);
+        intent.putExtra("pepperchiken", pepperchiken);
+        intent.putExtra("firedchiken", firedchiken);
+        intent.putExtra("squid", squid);
+        intent.putExtra("dollydish", dollyfish);
+        intent.putExtra("shrimp", shrimp);
+        intent.putExtra("scallops", scallops);
+        intent.putExtra("water", water);
+        intent.putExtra("beer", beer);
+        intent.putExtra("coke", coke);
+        intent.putExtra("ice", ice);
+        intent.putExtra("mushroom", mushroom);
+        intent.putExtra("onion", onion);
+        intent.putExtra("asparagus", asparagus);
+        intent.putExtra("babycorn", babycorn);
+
         startActivity(intent);
+        overridePendingTransition(0,0);
     }
 
     @Override
