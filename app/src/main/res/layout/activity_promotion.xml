@@ -10,12 +10,12 @@
     <Button
 
         android:id="@+id/buttonPromotion"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="95dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_toStartOf="@+id/buttonOrder"
         android:layout_toLeftOf="@+id/buttonOrder"
         android:background="@drawable/buttondesign"
@@ -27,12 +27,12 @@
 
         android:id="@+id/buttonMenu"
         android:onClick="openMenu"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="95dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_toStartOf="@+id/buttonPromotion"
         android:layout_toLeftOf="@+id/buttonPromotion"
         android:background="@drawable/buttondesign"
@@ -43,34 +43,17 @@
     <Button
 
         android:id="@+id/buttonOrder"
-        android:onClick="openOrder"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_toStartOf="@+id/buttonCheckout"
-        android:layout_toLeftOf="@+id/buttonCheckout"
-        android:background="@drawable/buttondesign"
-        android:text="Order"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp" />
-
-    <Button
-
-        android:id="@+id/buttonCheckout"
-        android:onClick="openCheckout"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="95dp"
-        android:layout_marginEnd="83dp"
-        android:layout_marginRight="83dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="308dp"
         android:background="@drawable/buttondesign"
-        android:text="Checkout"
+        android:onClick="openOrder"
+        android:text="Order"
         android:textColor="#FFFFFF"
         android:textSize="30sp" />
 
