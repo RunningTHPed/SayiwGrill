@@ -24,6 +24,7 @@ public class Order extends AppCompatActivity {
     int water,beer,coke,ice;
     int mushroom,onion,asparagus,babycorn;
     int test;
+    int price=0;
 
 
 
@@ -47,6 +48,7 @@ public class Order extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         page = bundle.getInt("page");
         activity = bundle.getInt("activity");
+        price = bundle.getInt("price");
         //if(activity ==1 ){
         count[0] = brisket = bundle.getInt("brisket");
         count[1] = ribeye = bundle.getInt("ribeye");
@@ -127,6 +129,7 @@ public class Order extends AppCompatActivity {
     public void openPromotion(View v){
 
         Intent intent = new Intent(Order.this, Promotion.class);
+        intent.putExtra("price", price);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
         intent.putExtra("brisket", brisket);
@@ -160,6 +163,7 @@ public class Order extends AppCompatActivity {
     public void openCheckout(View v){
         //finish();
         Intent intent = new Intent(Order.this, Checkout.class);
+        intent.putExtra("price", price);
         intent.putExtra("activity", activity);
         intent.putExtra("page", page);
         intent.putExtra("brisket", brisket);
