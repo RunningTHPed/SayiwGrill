@@ -106,7 +106,7 @@ public class   MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Menu.class);
-                intent.putExtra("MyX", number);
+                intent.putExtra("people", number);
                 //startActivity(new Intent(MainActivity.this, Menu.class));
                 startActivity(intent);
             }

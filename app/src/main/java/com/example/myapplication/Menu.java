@@ -53,6 +53,7 @@ public class Menu extends AppCompatActivity {
     int water1=0,beer1=0,coke1=0,ice1=0;
     int mushroom1=0,onion1=0,asparagus1=0,babycorn1=0;
     int activity = 1;
+    int people;
     TextView textView1;
     TextView textView2;
     TextView textView3;
@@ -101,6 +102,18 @@ public class Menu extends AppCompatActivity {
                         ribeye += location2 ;
                         chuckeye += location3  ;
                         wagyu += location4  ;
+                        if(location1!=0){
+                            mySQLConnect.sentData("Brisket",location1,people);
+                        }
+                        if(location2!=0){
+                            mySQLConnect.sentData("Ribeye",location2,people);
+                        }
+                        if(location3!=0){
+                            mySQLConnect.sentData("Chuckeye",location3,people);
+                        }
+                        if(location4!=0){
+                            mySQLConnect.sentData("Wagyu",location4,people);
+                        }
                         location1 = location2 = location3 = location4 = 0;
                         break;
                     case 2 :
@@ -108,6 +121,18 @@ public class Menu extends AppCompatActivity {
                         porkneck += location2;
                         sirlon += location3;
                         tenderloin += location4;
+                        if(location1!=0){
+                            mySQLConnect.sentData("Beacon",location1,people);
+                        }
+                        if(location2!=0){
+                            mySQLConnect.sentData("Pork neck",location2,people);
+                        }
+                        if(location3!=0){
+                            mySQLConnect.sentData("Sirloin",location3,people);
+                        }
+                        if(location4!=0){
+                            mySQLConnect.sentData("Tenderloin",location4,people);
+                        }
                         location1 = location2 = location3 = location4 = 0;
                         break;
                     case 3 :
@@ -115,6 +140,18 @@ public class Menu extends AppCompatActivity {
                         nugget += location2;
                         pepperchiken += location3;
                         firedchiken += location4;
+                        if(location1!=0){
+                            mySQLConnect.sentData("Breast",location1,people);
+                        }
+                        if(location2!=0){
+                            mySQLConnect.sentData("Nugget",location2,people);
+                        }
+                        if(location3!=0){
+                            mySQLConnect.sentData("Pepper chicken",location3,people);
+                        }
+                        if(location4!=0){
+                            mySQLConnect.sentData("Fried chicken",location4,people);
+                        }
                         location1 = location2 = location3 = location4 = 0;
                         break;
                     case 4 :
@@ -122,6 +159,18 @@ public class Menu extends AppCompatActivity {
                         dollyfish += location2;
                         shrimp += location3;
                         scallops += location4;
+                        if(location1!=0){
+                            mySQLConnect.sentData("Squid",location1,people);
+                        }
+                        if(location2!=0){
+                            mySQLConnect.sentData("Dolly fish",location2,people);
+                        }
+                        if(location3!=0){
+                            mySQLConnect.sentData("Shrimp",location3,people);
+                        }
+                        if(location4!=0){
+                            mySQLConnect.sentData("Scallops",location4,people);
+                        }
                         location1 = location2 = location3 = location4 = 0;
                         break;
                     case 5 :
@@ -129,6 +178,18 @@ public class Menu extends AppCompatActivity {
                         beer += location2;
                         coke += location3;
                         ice += location4;
+                        if(location1!=0){
+                            mySQLConnect.sentData("Plain water",location1,people);
+                        }
+                        if(location2!=0){
+                            mySQLConnect.sentData("Beer",location2,people);
+                        }
+                        if(location3!=0){
+                            mySQLConnect.sentData("Coke",location3,people);
+                        }
+                        if(location4!=0){
+                            mySQLConnect.sentData("Ice",location4,people);
+                        }
                         location1 = location2 = location3 = location4 = 0;
                         break;
                     case 6 :
@@ -136,6 +197,18 @@ public class Menu extends AppCompatActivity {
                         onion += location2;
                         asparagus += location3;
                         babycorn += location4;
+                        if(location1!=0){
+                            mySQLConnect.sentData("Enokitake",location1,people);
+                        }
+                        if(location2!=0){
+                            mySQLConnect.sentData("Onion",location2,people);
+                        }
+                        if(location3!=0){
+                            mySQLConnect.sentData("Asparagus",location3,people);
+                        }
+                        if(location4!=0){
+                            mySQLConnect.sentData("Baby corn",location4,people);
+                        }
                         location1 = location2 = location3 = location4 = 0;
                         break;
                 }
@@ -148,10 +221,10 @@ public class Menu extends AppCompatActivity {
 
                 //Intent intent = new Intent(Menu.this, Menu.class);
                 //intent.putExtra("page", page);
-                mySQLConnect.sentData("breast");
+                //mySQLConnect.sentData("breast");
                 //items.add("KUY");
                 adt.notifyDataSetChanged();
-                System.out.println(items);
+                //System.out.println(items);
 
 
                 textView1 = (TextView)findViewById(R.id.num1);
@@ -675,7 +748,7 @@ public class Menu extends AppCompatActivity {
             });*/
 
         Bundle bundle = getIntent().getExtras();
-        int number = bundle.getInt("MyX");
+        people = bundle.getInt("people");
 
 
 

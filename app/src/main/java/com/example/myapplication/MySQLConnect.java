@@ -84,7 +84,7 @@ public class MySQLConnect {
     }
 
 
-    public void sentData(String value){
+    public void sentData(String value,Integer count,Integer people){
         StrictMode.enableDefaults();
         if(Build.VERSION.SDK_INT>9){
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -94,6 +94,8 @@ public class MySQLConnect {
             ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
             nameValuePairs.add(new BasicNameValuePair("isADD","true"));
             nameValuePairs.add(new BasicNameValuePair("comment",value));
+            nameValuePairs.add(new BasicNameValuePair("count",Integer.toString(count)));
+            nameValuePairs.add(new BasicNameValuePair("people",Integer.toString(people)));
             HttpClient httpClient = new DefaultHttpClient();
             HttpPost httpPost = new HttpPost(URL + SENT_URL);
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
