@@ -28,11 +28,14 @@ import java.util.List;
 
 public class Menu extends AppCompatActivity {
 
-    /*private EditText addBox;
-    private Button addButt;
-    private ListView dataView;
+
+    private EditText addBox;
+    private Button addButt,addOrder;
+    //private ListView dataView;
     private MySQLConnect mySQLConnect;
-    private List<String>items;*/
+    private List<String>items;
+    private ArrayAdapter<String> adt;
+
     Dialog myDialog;
     int location1 = 0,location2 = 0,location3 = 0,location4 = 0 ;
     int price = 0;
@@ -56,14 +59,21 @@ public class Menu extends AppCompatActivity {
     TextView textView4;
 
 
+    public void update(){
+        //items = mySQLConnect.getData();
+        adt = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        //dataView.setAdapter(adt);
+    }
 
-    private int[] mImages = new int[]{
-            R.drawable.image_1,R.drawable.image_2
-    };
+    public void init(){
+        //addBox = (EditText)findViewById(R.id.addBox);
+        //addButt = (Button)findViewById(R.id.addButt);
+        //dataView = (ListView)findViewById(R.id.dataView);
+        addOrder = (Button)findViewById(R.id.addOrder);
+        mySQLConnect = new MySQLConnect(Menu.this);
+    }
 
-    private String[] mImageTitle = new String[]{
-            "Bear","Cat"
-    };
+
 
 
 
@@ -138,6 +148,10 @@ public class Menu extends AppCompatActivity {
 
                 //Intent intent = new Intent(Menu.this, Menu.class);
                 //intent.putExtra("page", page);
+                mySQLConnect.sentData("breast");
+                //items.add("KUY");
+                adt.notifyDataSetChanged();
+                System.out.println(items);
 
 
                 textView1 = (TextView)findViewById(R.id.num1);
@@ -665,21 +679,18 @@ public class Menu extends AppCompatActivity {
 
 
 
+        init();
+        update();
+        /*addOrder.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
 
-        //init();
-        //update();
+             }
+         });*/
+
+
 
     }
 
-    /*public void update(){
-        items = mySQLConnect.getData();
-        dataView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items));
-    }
 
-    public void init(){
-        //addBox = (EditText)findViewById(R.id.addBox);
-        //addButt = (Button)findViewById(R.id.addButt);
-        //dataView = (ListView)findViewById(R.id.dataView);
-        mySQLConnect = new MySQLConnect(Menu.this);
-    }*/
 }

@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.os.Build;
+import android.os.StrictMode;
+import android.provider.Settings;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -9,10 +12,19 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +32,7 @@ public class MySQLConnect {
 
     private  final Activity main;
     private List<String> list;
-    private String URL = "http://10.0.2.2/", GET_URL = "android/connect.php?status=0";
+    private String URL = "http://192.168.64.2/", GET_URL = "android/connect.php?status=0", SENT_URL = "android/sent_post.php";
 
     public  MySQLConnect(){
         main = null;
@@ -69,5 +81,33 @@ public class MySQLConnect {
                 list.add(comment);
             }
         }catch (JSONException ex){ ex.printStackTrace(); }
+    }
+
+
+    public void sentData(String value){
+        StrictMode.enableDefaults();
+        if(Build.VERSION.SDK_INT>9){
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+        try{
+            ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+            nameValuePairs.add(new BasicNameValuePair("isADD","true"));
+            nameValuePairs.add(new BasicNameValuePair("comment",value));
+            HttpClient httpClient = new DefaultHttpClient();
+            HttpPost httpPost = new HttpPost(URL + SENT_URL);
+            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, "UTF-8"));
+            httpClient.execute(httpPost);
+
+            Toast.makeText(main,"Completed.",Toast.LENGTH_LONG).show();
+
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
